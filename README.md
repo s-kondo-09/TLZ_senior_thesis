@@ -1,1 +1,1 @@
-# senior_thesis
+これは卒業論文の $\LaTeX$ ソースです。
