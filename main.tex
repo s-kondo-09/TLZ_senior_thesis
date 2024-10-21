@@ -52,37 +52,39 @@ Berryは周期系における波動関数の位相に，自明でない幾何学
 \section{本論文で用いられる記法}
 以下の記法は，本文で特に断りなく用いることにする．\\
 \begin{itemize} 
-  \item 「$A$は$B$によって定義される」ということを，
-  \begin{equation}
-    A := B
-  \end{equation}
-  で表す．
-  \item ある変数$x$についての偏微分を，
-  \begin{equation}
-    \partial_x := \frac{\partial}{\partial x}
-  \end{equation}
-  と書くことがある．
+  \item
+    「$A$は$B$によって定義される」ということを，
+    \begin{equation}
+      A := B
+    \end{equation}
+    で表す．
+  \item
+    ある変数$x$についての偏微分を，
+    \begin{equation}
+      \partial_x := \frac{\partial}{\partial x}
+    \end{equation}
+    と書くことがある．
   \item 実数全体の集合を$\mathbb{R}$，複素数全体の集合を$\mathbb{C}$とする．
   \item $\hbar$は，Dirac定数(換算Planck定数)である．これは，Planck定数を$2\pi$で割った値である．
   \item 以下の3つの$2\times2$行列
 \begin{equation}
-\Hat{\sigma}_x=
-\begin{pmatrix}
+  \Hat{\sigma}_x=
+  \begin{pmatrix}
     0 & 1\\
     1 & 0\\
-\end{pmatrix}
-,
-\Hat{\sigma}_y=
-\begin{pmatrix}
+  \end{pmatrix}
+  ,
+  \Hat{\sigma}_y=
+  \begin{pmatrix}
     0 & -i\\
     i & 0\\
-\end{pmatrix}
-,
-\Hat{\sigma}_z=
-\begin{pmatrix}
+  \end{pmatrix}
+  ,
+  \Hat{\sigma}_z=
+  \begin{pmatrix}
     1 & 0\\
     0 & -1\\
-\end{pmatrix}
+  \end{pmatrix}
 \end{equation}
 はPauli行列である．また，各Pauli行列$\Hat{\sigma}_i (i = x,y,z)$をベクトルの成分とみなして，
 \begin{equation}
@@ -96,10 +98,10 @@ Berryは周期系における波動関数の位相に，自明でない幾何学
 
 \section{断熱状態}
 $N$準位系($N$-level system)のHamiltonianを$\Hat{H}(t)$，状態ベクトル(state vector)を$|\psi(t)\rangle$とすると，状態ベクトルの時間発展は，Shr\"{o}dinger方程式
-  \begin{equation}
+\begin{equation}
   \label{SE}
-    i\hbar \frac{d}{dt} |\psi(t) \rangle = \Hat{H}(t) |\psi(t) \rangle
-  \end{equation}
+  i\hbar \frac{d}{dt} |\psi(t) \rangle = \Hat{H}(t) |\psi(t) \rangle
+\end{equation}
 で与えられる．
 また，各時刻$t$において，固有値方程式
 \begin{equation} 
@@ -134,18 +136,19 @@ $N$準位系が時刻$t_0$から$t_0+\Delta t$まで時間発展するとき，
   \Delta_{mn}(t) := \frac{1}{\hbar} \left\{ i \left( \langle \phi_m(t) | \Dot{\phi}_m(t) \rangle - \langle \phi_n(t) | \Dot{\phi}_n(t) \rangle \right)+ \frac{d}{dt} \arg \left( i \langle \phi_n(t) | \Dot{\phi}_m(t) \rangle \right) \right\}
 \end{equation}
 をquantum geometric potential(QGP)と呼ぶ．QGPは，後に説明する測地曲率と関係づけることができる．実際に，2準位系の場合について，このことを示そう．2準位系のHermiteなHamiltonianを
-    \begin{align}
-    \Hat{H}(t)&=x(t)\Hat{\sigma}_x + y(t) \Hat{\sigma}_y + z(t) \Hat{\sigma}_z\\
-    &=
-    \begin{pmatrix} 
+\begin{align}
+  \Hat{H}(t)
+  &= x(t)\Hat{\sigma}_x + y(t) \Hat{\sigma}_y + z(t) \Hat{\sigma}_z\\
+  &=
+  \begin{pmatrix} 
     z(t) & x(t) - iy(t)\\
     x(t) + iy(t) & -z(t)\\
-    \end{pmatrix}\\
-    &= E_2(t)
-    \begin{pmatrix} 
-    \cos \theta(t)&\sin \theta(t) \exp(-i\phi(t))\\
-    \sin \theta(t) \exp(+i\phi(t))&-\cos \theta(t)\\
-    \end{pmatrix}
+  \end{pmatrix}\\
+  &= E_2(t)
+  \begin{pmatrix} 
+    \cos \theta(t) & \sin \theta(t) \exp(-i\phi(t))\\
+    \sin \theta(t) \exp(+i\phi(t)) & -\cos \theta(t)\\
+  \end{pmatrix}
 \end{align}
 とする．ただし，直交座標$\{x(t), y(t), z(t)\}$から極座標$\{E_2(t), \theta(t), \phi(t)\}$への変換式
 \begin{align}
@@ -155,12 +158,14 @@ $N$準位系が時刻$t_0$から$t_0+\Delta t$まで時間発展するとき，
 \end{align}
 を用いた.また，$E_2(t)$は，$E_2(t) = \sqrt{x^2 + y^2 + z^2}$で表される断熱エネルギーの1つである．このとき，2つの断熱状態$|\phi_1(t) \rangle, |\phi_2(t) \rangle$は，
 \begin{align}
-  |\phi_1(t) \rangle &= 
+  |\phi_1(t) \rangle
+  &= 
   \begin{pmatrix}
     \sin \frac{\theta}{2}\\
     -e^{i\phi} \cos \frac{\theta}{2}
   \end{pmatrix},\\
-  |\phi_2(t) \rangle &=
+  |\phi_2(t) \rangle
+  &=
   \begin{pmatrix}
     \cos \frac{\theta}{2}\\
     e^{i\phi} \sin \frac{\theta}{2}
@@ -168,14 +173,16 @@ $N$準位系が時刻$t_0$から$t_0+\Delta t$まで時間発展するとき，
 \end{align}
 であるから，これらの時間微分は，
 \begin{align}
-  |\Dot{\phi}_1(t) \rangle &= 
+  |\Dot{\phi}_1(t) \rangle
+  &= 
   \begin{pmatrix}
     -\frac{\Dot{\theta}}{2} \sin \frac{\theta}{2}\\
     -e^{i\phi} (i\Dot{\phi} \sin \frac{\theta}{2} + \frac{\Dot{\theta}}{2}\cos \frac{\theta}{2})
   \end{pmatrix},\\
-  |\Dot{\phi}_2(t) \rangle &=
+  |\Dot{\phi}_2(t) \rangle
+  &=
   \begin{pmatrix}
-   \frac{\Dot{\theta}}{2} \cos \frac{\theta}{2}\\
+    \frac{\Dot{\theta}}{2} \cos \frac{\theta}{2}\\
     e^{i\phi} (-i\Dot{\phi} \cos \frac{\theta}{2} + \frac{\Dot{\theta}}{2}\sin \frac{\theta}{2})
   \end{pmatrix}
 \end{align}
@@ -185,7 +192,8 @@ $N$準位系が時刻$t_0$から$t_0+\Delta t$まで時間発展するとき，
 \end{equation}
 である．一方，パラメータ空間の単位球表面を動く曲線における測地曲率$\kappa_g$は，位置ベクトルを$\bm{r}(t)$とすると，
 \begin{align}
-  \kappa_g &= \left(\bm{r} \times \frac{d \bm{r}}{ds} \right) \cdot \frac{d^2 \bm{r}}{d s^2}\\
+  \kappa_g 
+  &= \left(\bm{r} \times \frac{d \bm{r}}{ds} \right) \cdot \frac{d^2 \bm{r}}{d s^2}\\
   &= \frac{\Dot{\theta} \Ddot{\phi} \sin \theta + 2 \Dot{\theta}^2 \Dot{\phi} \cos\theta + \Dot{\phi}^3 \sin^2\theta \cos \theta - \Dot{\phi} \Ddot{\theta} \sin \theta} {(\Dot{\theta}^2 + \Dot{\phi} \sin \theta)^{\frac{3}{2}}}
 \end{align}
 で与えられる．ただし，線素
@@ -215,7 +223,7 @@ Hamiltonianの時間依存性を表すパラメータを$\bm{R}(t)$とする．�
 \end{equation}
 を仮定して，$\bm{R}$空間上の閉じた経路$C$を一周するという条件で，$\gamma(t)$がどのように変化するか見てみよう．そのために，式(\ref{SE_R})の左から$\langle \psi(t) |$をかけると，
 \begin{equation}
- \langle \psi(t) | \Hat{H}(\bm{R}) |\psi(t) \rangle = i\hbar \langle \psi(t) | \frac{\partial}{\partial t} |\psi(t) \rangle
+  \langle \psi(t) | \Hat{H}(\bm{R}) |\psi(t) \rangle = i\hbar \langle \psi(t) | \frac{\partial}{\partial t} |\psi(t) \rangle
 \end{equation}
 となる．したがって，
 \begin{equation}
@@ -223,7 +231,8 @@ Hamiltonianの時間依存性を表すパラメータを$\bm{R}(t)$とする．�
 \end{equation}
 である．一方，式(\ref{psi_R})より，
 \begin{align}
-  \langle \psi(t) | \frac{\partial}{\partial t} |\psi(t) \rangle &=
+  \langle \psi(t) | \frac{\partial}{\partial t} |\psi(t) \rangle
+  &=
   \langle \phi(\bm{R}) | e^{-i\gamma_n(t)} \left( i\frac{\partial \gamma_n(t)}{\partial t} e^{i\gamma_n(t)} |\phi(\bm{R}) \rangle + e^{i\gamma_n(t)} \frac{\partial}{\partial t} |\phi(\bm{R}) \rangle \right)\\
   &= i \frac{\partial \gamma_n(t)}{\partial t} + \langle \phi_n(\bm{R}) | \nabla_{\bm{R}} | \phi_n(\bm{R}) \rangle \frac{\partial \bm{R}}{\partial t} \label{R_R}
 \end{align}
@@ -233,10 +242,12 @@ Hamiltonianの時間依存性を表すパラメータを$\bm{R}(t)$とする．�
 \end{equation}
 である．よって，式(\ref{E_R})および式(\ref{R_R})より，
 \begin{align}
-  i \frac{\partial \gamma_n(t)}{\partial t} &= 
+  i \frac{\partial \gamma_n(t)}{\partial t}
+  &= 
   -\frac{i}{\hbar} E_n(\bm{R}) - \langle \phi_n(\bm{R}) | \nabla_{\bm{R}} | \phi_n(\bm{R}) \rangle \frac{\partial \bm{R}(t)}{\partial t}\\
   \Leftrightarrow
-  \frac{\partial \gamma_n(t)}{\partial t} &=
+  \frac{\partial \gamma_n(t)}{\partial t}
+  &=
   -\frac{1}{\hbar} E_n(\bm{R}) + i  \langle \phi_n(\bm{R}) | \nabla_{\bm{R}} | \phi_n(\bm{R}) \rangle \frac{\partial \bm{R}(t)}{\partial t}
 \end{align}
 となる．
@@ -271,8 +282,9 @@ $\bm{R}(0) = \bm{R}(T)$として，$t$が$0$から$T$まで変化するとき，
 \end{equation}
 を考えると，それに対応するBerry接続
 \begin{align}
-\bm{a}_n^{\prime}(\bm{R}) &= -i\langle \phi_n(\bm{R}) \mid e^{-i\chi(\bm{R})}\left(i \nabla_{\bm{R}} \chi(\bm{R}) e^{i \chi(\bm{R})}\left|\phi_n(\bm{R})\right\rangle\right. \left.+e^{i \chi(\bm{R})} \nabla_{\bm{R}}\left|\phi_n(\bm{R})\right\rangle\right)\\
-&= \bm{a}_n(\bm{R})+  \nabla_{\bm{R}} \chi_{\bm{R}}
+  \bm{a}_n^{\prime}(\bm{R})
+  &= -i\langle \phi_n(\bm{R}) \mid e^{-i\chi(\bm{R})}\left(i \nabla_{\bm{R}} \chi(\bm{R}) e^{i \chi(\bm{R})}\left|\phi_n(\bm{R})\right\rangle\right. \left.+e^{i \chi(\bm{R})} \nabla_{\bm{R}}\left|\phi_n(\bm{R})\right\rangle\right)\\
+  &= \bm{a}_n(\bm{R})+  \nabla_{\bm{R}} \chi_{\bm{R}}
 \end{align}
 が得られる．これはベクトルポテンシャルのゲージ変換に対応する．
 
@@ -290,7 +302,8 @@ $\bm{R}(0) = \bm{R}(T)$として，$t$が$0$から$T$まで変化するとき，
 
 第2章と同様に，2準位系のHermiteなHamiltonianを
 \begin{align}
-  \Hat{H}(t)&:=x(t)\Hat{\sigma}_x + y(t) \Hat{\sigma}_y + z(t) \Hat{\sigma}_z\\
+  \Hat{H}(t)
+  &:= x(t)\Hat{\sigma}_x + y(t) \Hat{\sigma}_y + z(t) \Hat{\sigma}_z\\
   &=
   \begin{pmatrix} 
   z(t) & x(t) - iy(t)\\
@@ -298,8 +311,8 @@ $\bm{R}(0) = \bm{R}(T)$として，$t$が$0$から$T$まで変化するとき，
   \end{pmatrix}\\
   &= E_2(t)
   \begin{pmatrix} 
-  \cos \theta(t)&\sin \theta(t) \exp(-i\phi(t))\\
-  \sin \theta(t) \exp(+i\phi(t))&-\cos \theta(t)\\
+  \cos \theta(t) & \sin \theta(t) \exp(-i\phi(t))\\
+  \sin \theta(t) \exp(+i\phi(t)) & -\cos \theta(t)\\
   \end{pmatrix}
 \end{align}
 とする．ただし，直交座標$\{x(t), y(t), z(t)\}$から極座標$\{E_2(t), \theta(t), \phi(t)\}$への変換式
@@ -317,7 +330,8 @@ $\bm{R}(0) = \bm{R}(T)$として，$t$が$0$から$T$まで変化するとき，
 \end{align}
 を仮定する．ただし，$| \phi_2(t) \rangle$は，式(\ref{EE})を満たす断熱状態
 \begin{equation}
-  | \phi_2(t) \rangle = \exp(i\mu(t))
+  | \phi_2(t) \rangle
+  = \exp(i\mu(t))
   \begin{pmatrix}
     \cos(\frac{\theta(t)}{2})\exp(-i\frac{\phi(t)}{2})\\[8pt]
     \sin(\frac{\theta(t)}{2})\exp(+i\frac{\phi(t)}{2})
@@ -405,8 +419,7 @@ $\mu(t)$が非断熱遷移の確率にどのような影響を与えるか調べ
 
 ここで，DDP法を用いると，非断熱遷移の確率
 \begin{equation}
-  P
-  \approx \exp \left(\frac{4}{\delta \hbar} \mathrm{Im} \int_0^{t_c} E_{\mathrm{LZ}_2} dt \right) \label{P_nt}\\
+  P \approx \exp \left(\frac{4}{\delta \hbar} \mathrm{Im} \int_0^{t_c} E_{\mathrm{LZ}_2} dt \right) \label{P_nt}\\
 \end{equation}
 が得られる．ただし，$E_{\mathrm{LZ}_2}$は，変換後の系における高い方の断熱エネルギーであり，
 \begin{equation}
@@ -431,7 +444,7 @@ $\Gamma_g$が幾何学的な量であること別の方法で確かめてみよ�
 \begin{figure}[htbp]
   \centering
   \includegraphics[scale=0.5]{figures/solidangle_GP.png}
-    \caption{複素積分(\ref{gamma_g_solid})の経路．赤い線は第1 Riemann面，青い線は第2 Riemann面における経路を表す．また，$t_c$と$t_c^*$を結ぶ緑の線は切断(cut)である．}
+  \caption{複素積分(\ref{gamma_g_solid})の経路．赤い線は第1 Riemann面，青い線は第2 Riemann面における経路を表す．また，$t_c$と$t_c^*$を結ぶ緑の線は切断(cut)である．}
   \label{fig:solidangle_GP}
 \end{figure}
 
@@ -453,8 +466,10 @@ LZモデルのHamiltonianは，
   \Hat{H}_{\mathrm{LZ}} =
   \begin{pmatrix}
     \varepsilon_0 t & \Delta_0\\
-    \Delta_0 & -\varepsilon_0 t \label{H_LZ}
-  \end{pmatrix} \quad (\varepsilon_0 > 0)
+    \Delta_0 & -\varepsilon_0 t
+    \label{H_LZ}
+  \end{pmatrix}
+  \quad (\varepsilon_0 > 0)
 \end{equation}
 で定義される．ここで，$\varepsilon_0 t$はエネルギーバイアス(energy bias)，$\Delta_0$は最小エネルギーギャップ(minimal energy gap)と呼ぶ．また，$\Delta_0 = 0$のときの，Hamiltonian(\ref{H_LZ})についての固有値方程式における固有値を，透熱エネルギー(diabatic energy)と呼ぶ．さらに，それぞれの固有値に属する規格直交化された固有関数を透熱状態(diabatic state)と呼び，属する固有値が小さい順に，$|1\rangle,|2\rangle$で表す\footnote{透熱状態の組を透熱基底と呼ぶ．透熱基底は，断熱基底と同様に完全系をなす．}．
 
@@ -471,7 +486,7 @@ LZモデルのHamiltonianは，
 
 この系における$|\phi_2(t)\rangle$から$|\phi_1(t)\rangle$へ遷移する確率$P_{\mathrm{LZ}}$は，
 \begin{equation}
-  P_{\mathrm{LZ}}=\exp \left(-\frac{\pi \Delta_0^2}{\hbar \varepsilon_0 } \right) 
+  P_{\mathrm{LZ}} = \exp \left(-\frac{\pi \Delta_0^2}{\hbar \varepsilon_0 } \right) 
 \end{equation}
 であることが知られている．これをLandau-Zener公式と呼ぶ．
 
@@ -563,9 +578,9 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
 \end{equation}
 として，$t=0$における3つの量
 \begin{align}
-  \bm{r}&:=\frac{\bm{d}(0)}{|\bm{d}(0)|} \label{r}\\
-  \bm{t}&:=\frac{\partial_{\tau} \bm{d}(0)}{|\partial_{\tau} \bm{d}(0)|} \label{t}\\
-  \bm{n}&:=\bm{r}\times \bm{t} \label{n}
+  \bm{r} &:= \frac{\bm{d}(0)}{|\bm{d}(0)|} \label{r}\\
+  \bm{t} &:= \frac{\partial_{\tau} \bm{d}(0)}{|\partial_{\tau} \bm{d}(0)|} \label{t}\\
+  \bm{n} &:= \bm{r}\times \bm{t} \label{n}
 \end{align}
 を定義する．$\bm{r}$，$\bm{t}$，$\bm{n}$はそれぞれ動径ベクトル，接ベクトル，法ベクトルである．今の系では，式(\ref{d})が，
 \begin{equation}
@@ -609,7 +624,8 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
 \end{equation}
 と表せる．したがって，
 \begin{align}
-  a(t) &= 
+  a(t)
+  &= 
   \begin{pmatrix}
     \Delta_0\\
     \frac{1}{2} \kappa_g \varepsilon_0^2 t^2\\
@@ -621,8 +637,11 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
     0\\
     0\\
   \end{pmatrix}\\
-  &= \Delta_0,\\
-  b(t) &= \sqrt{\left|
+  &=
+  \Delta_0,\\
+  b(t)
+  &=
+  \sqrt{\left|
   \begin{pmatrix}
     \Delta_0\\
     \frac{1}{2} \kappa_g \varepsilon_0^2 t^2\\
@@ -630,23 +649,17 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
   \end{pmatrix}
   \right|^2 -\Delta_0^2}\\
   &= \sqrt{(\varepsilon_0 t)^2 + (\frac{1}{2} \kappa_g \varepsilon_0^2 t^2)^2}\\
-  &\approx
-  \varepsilon_0 t (1+ (\frac{1}{2} \kappa_g \varepsilon_0 \tau)^2)^{\frac{1}{2}}\\
-  &=
-  \varepsilon_0 t + O(t^3),\\
+  &\approx \varepsilon_0 t (1+ (\frac{1}{2} \kappa_g \varepsilon_0 \tau)^2)^{\frac{1}{2}}\\
+  &= \varepsilon_0 t + O(t^3),\\
   \phi(t)
-  &=
-  \arctan \frac{\kappa_g \varepsilon_0 t}{2} \label{phi_arc}
+  &= \arctan \frac{\kappa_g \varepsilon_0 t}{2} \label{phi_arc}
 \end{align}
 である．また，式(\ref{phi_arc})の両辺を$t$で微分すると，
 \begin{align}
   \partial_t \phi(t)
-  &=
-  \frac{\frac{\kappa_g \varepsilon_0 t}{2}}{1+(\frac{\kappa_g \varepsilon_0 t}{2})^2}\\
-  &=
-  \frac{\kappa_g \varepsilon_0}{2} (1-(\frac{\kappa_g \varepsilon_0 t}{2})^2)^{-1}\\
-  &=
-  \frac{\kappa_g \varepsilon_0}{2} + O(t^2)
+  &= \frac{\frac{\kappa_g \varepsilon_0 t}{2}}{1+(\frac{\kappa_g \varepsilon_0 t}{2})^2}\\
+  &= \frac{\kappa_g \varepsilon_0}{2} (1-(\frac{\kappa_g \varepsilon_0 t}{2})^2)^{-1}\\
+  &= \frac{\kappa_g \varepsilon_0}{2} + O(t^2)
 \end{align}
 となる．さらに，断熱エネルギー(\ref{E_LZ})は，
 \begin{equation}
@@ -658,10 +671,9 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
 \end{equation}
 と定まる．よって，TLZ遷移における遷移確率(\ref{P_nt})は，
 \begin{align}
-  P &\approx
-  \exp \left(\frac{4}{|\delta|} \mathrm{Im} \int_0^{t_c} \sqrt{\left( \left( \Delta_0 - \left(\frac{\kappa_g \varepsilon_0 \delta }{4}\right) \right)^2 + (\varepsilon_0 t)^2 \right)} dt \right)\\
-  &=
-  \exp \left(\frac{4}{|\delta|} \int_0^{\frac{1}{\varepsilon_0} (\Delta_0 - \frac{\kappa_g \varepsilon_0 \delta}{4})} \sqrt{\left( \left( \Delta_0 - \left(\frac{\kappa_g \varepsilon_0 \delta}{4} \right)\right)^2 - (\varepsilon_0 t)^2 \right)} dt \right)
+  P
+  &\approx \exp \left(\frac{4}{|\delta|} \mathrm{Im} \int_0^{t_c} \sqrt{\left( \left( \Delta_0 - \left(\frac{\kappa_g \varepsilon_0 \delta }{4}\right) \right)^2 + (\varepsilon_0 t)^2 \right)} dt \right)\\
+  &= \exp \left(\frac{4}{|\delta|} \int_0^{\frac{1}{\varepsilon_0} (\Delta_0 - \frac{\kappa_g \varepsilon_0 \delta}{4})} \sqrt{\left( \left( \Delta_0 - \left(\frac{\kappa_g \varepsilon_0 \delta}{4} \right)\right)^2 - (\varepsilon_0 t)^2 \right)} dt \right)
 \end{align}
 である．ここで，積分を実行するために，変数変換
 \begin{equation}
@@ -669,12 +681,10 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
 \end{equation}
 を行うと，
 \begin{align}
-  P &=
-  \exp \left(\frac{4}{|\delta|} \int_{\frac{\pi}{2}}^0 \sqrt{\left(\Delta_0 - \left(\frac{\kappa_g \varepsilon_0 \delta}{4}\right) \right)^2 (1-\cos^2\varphi)} \frac{1}{\varepsilon_0} \left( \Delta_0 - \frac{\kappa_g \varepsilon_0 \delta}{4} \right) (-\sin \varphi) d\varphi \right)\\
-  &=
-  \exp \left(-\frac{4}{\varepsilon_0 |\delta|} \left(\Delta_0 - \frac{\kappa_g \varepsilon_0 \delta}{4} \right) ^2\int_0^{\frac{\pi}{2}} \sin^2\theta d\theta \right)\\
-  &=
-  \exp \left(-\frac{4}{\varepsilon_0 |\delta|} \left(\Delta_0 - \frac{\kappa_g \varepsilon_0 \delta}{4} \right) ^2 \frac{\pi}{4} \right)\\
+  P
+  &= \exp \left(\frac{4}{|\delta|} \int_{\frac{\pi}{2}}^0 \sqrt{\left(\Delta_0 - \left(\frac{\kappa_g \varepsilon_0 \delta}{4}\right) \right)^2 (1-\cos^2\varphi)} \frac{1}{\varepsilon_0} \left( \Delta_0 - \frac{\kappa_g \varepsilon_0 \delta}{4} \right) (-\sin \varphi) d\varphi \right)\\
+  &= \exp \left(-\frac{4}{\varepsilon_0 |\delta|} \left(\Delta_0 - \frac{\kappa_g \varepsilon_0 \delta}{4} \right) ^2\int_0^{\frac{\pi}{2}} \sin^2\theta d\theta \right)\\
+  &= \exp \left(-\frac{4}{\varepsilon_0 |\delta|} \left(\Delta_0 - \frac{\kappa_g \varepsilon_0 \delta}{4} \right) ^2 \frac{\pi}{4} \right)\\
   &= \exp \left(-\frac{\pi}{4} \frac{(2\Delta_0-\frac{\kappa_g \varepsilon_0 \delta}{4})^2}{\varepsilon_0 |\delta|} \right)\\
   &= \exp \left[-\pi \frac{(\Delta_0 -\frac{\kappa_g \varepsilon_0 \delta}{4})^2}{\varepsilon_0 |\delta|}\right]
 \end{align}
@@ -696,7 +706,8 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
 \section{LZ遷移を含むcyclic evolution}
 cyclic evolutionの例として，LZ遷移を周期的に繰り返す系を考えよう\cite{Kayanuma1993}．この系のHamiltonianは，
 \begin{align}
-  \Hat{H}_{\mathrm{CE}} &=
+  \Hat{H}_{\mathrm{CE}}
+  &=
   \begin{pmatrix}
     \varepsilon_0 \cos \omega t& \Delta_0 C(t)\\
     \Delta_0 C(t) & -\varepsilon_0 \cos \omega t
@@ -829,10 +840,9 @@ cyclic evolutionの例として，LZ遷移を周期的に繰り返す系を考�
 \end{align}
 である．よって，$t \rightarrow -\infty$における$c_2(t)$は，
 \begin{align}
-  \lim_{t \rightarrow -\infty} c_2(t)   & = 
-  B \frac{\sqrt{2 \pi}}{\Gamma(1-i \bar{\delta})} \exp \left(-\frac{\pi \bar{\delta}}{4}-\frac{i v t^2}{4}-i \bar{\delta} \log \sqrt{v} t\right)\\
-  &=
-  A \frac{\sqrt{2 \pi \bar{\delta}}}{\Gamma(1-i \bar{\delta})} \exp \left(-\frac{\pi \bar{\delta}}{4} - \frac{i\pi}{4} - \frac{i v t^2}{4} - i \bar{\delta} \log \sqrt{v} t\right) \label{C2_inf}
+  \lim_{t \rightarrow -\infty} c_2(t) 
+  &= B \frac{\sqrt{2 \pi}}{\Gamma(1-i \bar{\delta})} \exp \left(-\frac{\pi \bar{\delta}}{4}-\frac{i v t^2}{4}-i \bar{\delta} \log \sqrt{v} t\right)\\
+  &= A \frac{\sqrt{2 \pi \bar{\delta}}}{\Gamma(1-i \bar{\delta})} \exp \left(-\frac{\pi \bar{\delta}}{4} - \frac{i\pi}{4} - \frac{i v t^2}{4} - i \bar{\delta} \log \sqrt{v} t\right) \label{C2_inf}
 \end{align}
 である．
 
@@ -843,13 +853,15 @@ cyclic evolutionの例として，LZ遷移を周期的に繰り返す系を考�
 \end{equation}
 で与えられる．断熱エネルギー$E_{\pm}(t)$を用いて，
 \begin{align}
-  F(t) &:= \int E_{\pm} (t) dt\\
+  F(t)
+  &:= \int E_{\pm} (t) dt\\
   &= \int \sqrt{\Delta_0^2 + \frac{v^2 t^2}{4}} dt\\
   &= \frac{t}{4} \sqrt{4\Delta_0^2 + v^2 t^2} + \frac{\Delta_0^2}{v} \log |v^2 t + v \sqrt{4\Delta_0^2 + v^2 t^2}|
 \end{align}
 を定義する．このとき，
 \begin{align}
-  \chi &:= \int_0^t \sqrt{\Delta_0^2 + \frac{v^2 t^2}{4}} dt^{\prime}\\
+  \chi
+  &:= \int_0^t \sqrt{\Delta_0^2 + \frac{v^2 t^2}{4}} dt^{\prime}\\
   &= F(t) -F(0)\\
   &= \frac{t}{4} \sqrt{4\Delta_0^2 + v^2 t^2} + \frac{\Delta_0^2}{v} \log |v^2 t + v \sqrt{4\Delta_0^2 + v^2 t^2}| - \frac{\Delta_0^2}{v} \log(2\Delta_0 v)\\
   &= \frac{t}{4} \sqrt{4\Delta_0^2 + v^2 t^2} + \frac{\Delta_0^2}{v} \log \left(\frac{vt}{2\Delta_0} + \sqrt{\left(1 + \frac{v^2 t^2}{4\Delta_0^2}\right)}\right)\\
@@ -866,7 +878,8 @@ cyclic evolutionの例として，LZ遷移を周期的に繰り返す系を考�
 \end{equation}
 となる．$X \gg \bar{\delta}$のとき，
 \begin{align}
-  \chi &\approx X^2 (1+ \frac{\bar{\delta}}{2 X^2}) + \bar{\delta} (\log \left|X + X\sqrt{1 + \frac{\bar{\delta}}{2X^2}}\right| - \bar{\delta} \log \sqrt{\bar{\delta}})\\
+  \chi
+  &\approx X^2 (1+ \frac{\bar{\delta}}{2 X^2}) + \bar{\delta} (\log \left|X + X\sqrt{1 + \frac{\bar{\delta}}{2X^2}}\right| - \bar{\delta} \log \sqrt{\bar{\delta}})\\
   &\approx X^2 + \frac{\bar{\delta}}{2} + \bar{\delta} \log |2X| - \bar{\delta} \log \sqrt{\bar{\delta}}
 \end{align}
 である．$t \rightarrow \infty$のとき，
@@ -917,29 +930,28 @@ cyclic evolutionの例として，LZ遷移を周期的に繰り返す系を考�
 次に，$M_{12}$を求めよう．
 式(\ref{C2_inf})および式(\ref{C1_C2})より，
 \begin{align}
-  c_2^+ &= e^{i\chi} \lim_{t \rightarrow \infty} c_2\\
+  c_2^+
+  &= e^{i\chi} \lim_{t \rightarrow \infty} c_2\\
   &= A \frac{\sqrt{2 \pi \bar{\delta}}}{\Gamma(1-i \bar{\delta})} \exp \left(-\frac{\pi \bar{\delta}}{4} - \frac{i\pi}{4} - \frac{i v t^2}{4} - i \bar{\delta} \log \sqrt{v} t + \frac{ivt^2}{4} + \frac{i\bar{\delta}}{2} (1 - \log \bar{\delta})  + i\bar{\delta} \log (\sqrt{v}t) \right)\\
   &= A \frac{\sqrt{2 \pi \bar{\delta}}}{\Gamma(1-i \bar{\delta})} \exp \left(-\frac{\pi \bar{\delta}}{4} - \frac{i\pi}{4} +\frac{i\bar{\delta}}{2} (1 - \log \bar{\delta}) \right)
 \end{align}
 である．また，式(\ref{C1_inf})および式(\ref{C1_C2})より，
 \begin{align}
-  c_1^- &= e^{-i\chi} \lim_{t \rightarrow \infty} c_1\\
+  c_1^-
+  &= e^{-i\chi} \lim_{t \rightarrow \infty} c_1\\
   &= A \exp \left(\frac{i v t^2}{4} + \frac{\pi \bar{\delta}}{4} + i \bar{\delta} \log \sqrt{v} t - \left( \frac{i v t^2}{4} + \frac{i\bar{\delta}}{2} (1 - \log \bar{\delta})  + i\bar{\delta} \log (\sqrt{v}t) \right) \right)\\
   &= A \exp \left( \frac{\pi \bar{\delta}}{4} - \frac{i\bar{\delta}}{2} (1 - \log \bar{\delta}) \right)
 \end{align}
 である．したがって，$A$を消去すると，
 \begin{align} 
   c_2^{+}
-  &=
-  \frac{\sqrt{2 \pi \bar{\delta}}}{\Gamma(1-i \bar{\delta})} e^{-\frac{\pi \bar{\delta}}{2}} \exp \left(-i(\bar{\delta} (\log \bar{\delta}-1))+\frac{\pi}{4}\right) c_1^{-} \\
-  & =
-  \frac{\sqrt{2 \pi \bar{\delta}}}{|\Gamma(1-i \bar{\delta})|} \frac{e^{-\frac{\pi \bar{\delta}}{2}}}{e^{i \phi_s}} c_1^{-} \\ & =\frac{\sqrt{2 \pi \bar{\delta}} e^{-\frac{\pi \bar{\delta}}{2}} e^{-i \phi_s}}{|-i \bar{\delta} \Gamma(-i \bar{\delta})|} c_1^{-} \\
-  & =\frac{\sqrt{2 \pi \bar{\delta}} e^{-\frac{\pi \bar{\delta}}{2}} e^{-i \phi_s}}{\bar{\delta}} \frac{1}{|\Gamma(-i \bar{\delta}|)} c_1^{-} \\
-  & =\frac{\sqrt{2 \pi \bar{\delta}} e^{-\frac{\pi \bar{\delta}}{2}} e^{-i \phi_s}}{\bar{\delta}} \sqrt{\frac{\bar{\delta} \sinh (\bar{\delta} \pi)}{\pi}} c_1^{-} \\
-  & =
-  \sqrt{2} e^{-\frac{\pi \bar{\delta}}{2}}\left(\frac{1}{2}\left(e^{\pi \bar{\delta}}-e^{-\pi \bar{\delta}}\right)\right)^{\frac{1}{2}} e^{-i \phi_s} c_1^{-} \\
-  & =(e^{-\pi \bar{\delta}}\left(e^{\pi \bar{\delta}}-e^{-\pi \bar{\delta}}\right))^{\frac{1}{2}} e^{-i \phi_s} c_1^{-} \\ 
-  & =\sqrt{1-e^{-2 \pi \bar{\delta}}} e^{-i \phi_s} c_1^{-}
+  &= \frac{\sqrt{2 \pi \bar{\delta}}}{\Gamma(1-i \bar{\delta})} e^{-\frac{\pi \bar{\delta}}{2}} \exp \left(-i(\bar{\delta} (\log \bar{\delta}-1))+\frac{\pi}{4}\right) c_1^{-} \\
+  &= \frac{\sqrt{2 \pi \bar{\delta}}}{|\Gamma(1-i \bar{\delta})|} \frac{e^{-\frac{\pi \bar{\delta}}{2}}}{e^{i \phi_s}} c_1^{-} \\ & =\frac{\sqrt{2 \pi \bar{\delta}} e^{-\frac{\pi \bar{\delta}}{2}} e^{-i \phi_s}}{|-i \bar{\delta} \Gamma(-i \bar{\delta})|} c_1^{-} \\
+  &= \frac{\sqrt{2 \pi \bar{\delta}} e^{-\frac{\pi \bar{\delta}}{2}} e^{-i \phi_s}}{\bar{\delta}} \frac{1}{|\Gamma(-i \bar{\delta}|)} c_1^{-} \\
+  &= \frac{\sqrt{2 \pi \bar{\delta}} e^{-\frac{\pi \bar{\delta}}{2}} e^{-i \phi_s}}{\bar{\delta}} \sqrt{\frac{\bar{\delta} \sinh (\bar{\delta} \pi)}{\pi}} c_1^{-} \\
+  &= \sqrt{2} e^{-\frac{\pi \bar{\delta}}{2}}\left(\frac{1}{2}\left(e^{\pi \bar{\delta}}-e^{-\pi \bar{\delta}}\right)\right)^{\frac{1}{2}} e^{-i \phi_s} c_1^{-} \\
+  &= (e^{-\pi \bar{\delta}}\left(e^{\pi \bar{\delta}}-e^{-\pi \bar{\delta}}\right))^{\frac{1}{2}} e^{-i \phi_s} c_1^{-} \\ 
+  &= \sqrt{1-e^{-2 \pi \bar{\delta}}} e^{-i \phi_s} c_1^{-}
 \end{align}
 より，
 \begin{equation}
@@ -1095,12 +1107,14 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
 \end{equation}
 と決定される．これらを，式(\ref{DE})に代入すると，
 \begin{align}
-  \beta_n &= \frac{1}{2i\sin \xi} (e^{in\xi} - e^{-in\xi})\\
+  \beta_n
+  &= \frac{1}{2i\sin \xi} (e^{in\xi} - e^{-in\xi})\\
   &= \frac{\sin n \xi}{\sin \xi}
 \end{align}
 となる．したがって，式(\ref{psi_2m-1})は，
 \begin{align}
-  \psi_{2m-1} &= T (T^* T)^{m-1} \psi_0\\
+  \psi_{2m-1}
+  &= T (T^* T)^{m-1} \psi_0\\
   &= T (-1)^{m-1} S^{2m-2} \psi_0\\
   &= 
   \begin{pmatrix}
@@ -1118,9 +1132,11 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
 \end{align}
 となる．したがって，この系が，$t = \frac{(2m-1)\pi}{\omega}, \frac{2m \pi}{\omega}$においてそれぞれ状態$|1\rangle$にある確率$P_{2m-1}, P_{2m}$は，
 \begin{align}
-  P_{2m-1} &= 1-q |\beta_{2m-1}|^2\\
+  P_{2m-1}
+  &= 1-q |\beta_{2m-1}|^2\\
   &= 1-q \left( \frac{\sin (2m-1) \xi}{\sin \xi} \right)^2,\\
-  P_{2m} &= q |\beta_{2m}|^2\\
+  P_{2m} 
+  &= q |\beta_{2m}|^2\\
   &= q \left( \frac{\sin (2m) \xi}{\sin \xi} \right)^2
 \end{align}
 である．
@@ -1131,7 +1147,8 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
 \end{equation}
 である．したがって，動力学的位相$\chi_d$を計算すればAharonov-Ahandan位相$\chi_g$もただちに求められる\footnote{つまり，$\chi_d$の符号反転が$\chi_g$である．}．第\ref{AT}章で，断熱遷移における動力学的位相を定義したが，一般には
 \begin{align}
-  \chi_d &= - \int_0^{\frac{2\pi}{\omega}} \langle \psi(t) | H(t) | \psi(t) \rangle dt\\
+  \chi_d
+  &= -\int_0^{\frac{2\pi}{\omega}} \langle \psi(t) | H(t) | \psi(t) \rangle dt\\
   &= -i \int_0^{\frac{2\pi}{\omega}} \langle \psi(t) | \frac{d}{dt} | \psi(t) \rangle dt
 \end{align}
 で定義される．ただし，2つ目の等号では，Shr\"{o}dinger方程式(\ref{SE})を用いた．
@@ -1140,7 +1157,7 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
 では，動力学的位相を計算しよう．そのために，図\ref{fig:CE_LZ}で表される系を，3つの領域
 \begin{enumerate}
 \renewcommand{\labelenumi}{(\roman{enumi})}
-  \item $t=0$から$t = \frac{\pi}{2\omega}$までの区間
+  \item $t = 0$から$t = \frac{\pi}{2\omega}$までの区間
   \item $t = \frac{\pi}{2\omega}$から$t = \frac{3\pi}{2\omega}$までの区間
   \item $\frac{3\pi}{2\omega}$から$t = \frac{2\pi}{\omega}$までの区間
 \end{enumerate}
@@ -1157,7 +1174,8 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
   \end{equation}
   より，
   \begin{align}
-    \chi_d^{(\mathrm{i})}　&= -i \int_0^{\frac{\pi}{2\omega}} \langle \psi(t) | \frac{\partial}{\partial t} | \psi(t) \rangle dt\\
+    \chi_d^{(\mathrm{i})}
+    &= -i \int_0^{\frac{\pi}{2\omega}} \langle \psi(t) | \frac{\partial}{\partial t} | \psi(t) \rangle dt\\
     &= -i \int_0^{\frac{\pi}{2\omega}} (e^{i\eta}, 0) \frac{\partial}{\partial t} dt
     \begin{pmatrix}
       e^{-i\eta}\\
@@ -1178,7 +1196,8 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
   \end{equation}
   より，
   \begin{align}
-    \chi_d^{(\mathrm{ii})}　&= -i \int_{\frac{\pi}{2\omega}}^{\frac{3\pi}{2\omega}} \langle \psi(t) | \frac{\partial}{\partial t} | \psi(t) \rangle dt\\
+    \chi_d^{(\mathrm{ii})}
+    &= -i \int_{\frac{\pi}{2\omega}}^{\frac{3\pi}{2\omega}} \langle \psi(t) | \frac{\partial}{\partial t} | \psi(t) \rangle dt\\
     &= -i \int_{\frac{\pi}{2\omega}}^{\frac{3\pi}{2\omega}} \partial_t \eta (2q-1) dt\\
     &= \theta(2q-1)
   \end{align}
@@ -1194,7 +1213,8 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
   \end{equation}
   より，
   \begin{align}
-    \chi_d^{(\mathrm{iii})} &= -i \int_{\frac{3\pi}{2\omega}}^{\frac{2\pi}{\omega}} \langle \psi(t) | \frac{\partial}{\partial t} | \psi(t) \rangle dt\\
+    \chi_d^{(\mathrm{iii})}
+    &= -i \int_{\frac{3\pi}{2\omega}}^{\frac{2\pi}{\omega}} \langle \psi(t) | \frac{\partial}{\partial t} | \psi(t) \rangle dt\\
     &= - i \int_{\frac{3\pi}{2\omega}}^{\frac{2\pi}{\omega}} \partial_t \eta dt\\
     &= -\frac{\theta}{2}
   \end{align}
@@ -1234,7 +1254,8 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
 \renewcommand{\labelenumi}{(\roman{enumi})}
   \item 
     \begin{align}
-      \Hat{\rho}^{(\mathrm{i})} &= \psi^{(\mathrm{i})\dagger} \psi^{(\mathrm{i})} \\
+      \Hat{\rho}^{(\mathrm{i})}
+      &= \psi^{(\mathrm{i})\dagger} \psi^{(\mathrm{i})} \\
       &=
       \begin{pmatrix}
         1 & 0\\
@@ -1246,7 +1267,8 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
   である．\\
   \item
     \begin{align}
-      \Hat{\rho}^{(\mathrm{ii})}  &= \psi^{(\mathrm{ii})\dagger} \psi^{(\mathrm{ii})} \\
+      \Hat{\rho}^{(\mathrm{ii})}
+      &= \psi^{(\mathrm{ii})\dagger} \psi^{(\mathrm{ii})} \\
       &=
       \begin{pmatrix}
         q & \sqrt{q(1-q)} e^{-i(\phi_s + 2 \eta)}\\
@@ -1258,7 +1280,8 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
 である．\\
 \item
   \begin{align}
-    \Hat{\rho}^{(\mathrm{iii})}  &= \psi^{(\mathrm{iii})\dagger} \psi^{(\mathrm{iii})} \\
+    \Hat{\rho}^{(\mathrm{iii})}
+    &= \psi^{(\mathrm{iii})\dagger} \psi^{(\mathrm{iii})} \\
     &=
     \begin{pmatrix}
       1 & 0\\
@@ -1335,7 +1358,8 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
 
 したがって，
 \begin{align}
-  \chi_d &= - \theta - \sum_{m=1}^{2n-1} \left( 1 - 2q \left(\frac{\sin (2m) \xi}{\sin \xi}\right)^2\right) \theta\\
+  \chi_d
+  &= - \theta - \sum_{m=1}^{2n-1} \left( 1 - 2q \left(\frac{\sin (2m) \xi}{\sin \xi}\right)^2\right) \theta\\
   &= -\theta - (2n-1) \theta + 2nq\frac{1}{\sin^2 \xi}\\
   &= -2n\theta (1-\frac{q}{\sin^2 \xi})
 \end{align}
@@ -1512,7 +1536,8 @@ TLZ遷移を含むcyclic evolutionで整流作用を取り入れない系のHami
 \end{align}
 となる．式(\ref{LZ1})を微分して式(\ref{LZ2})を代入すると，
 \begin{align}
-  i\frac{d^2}{dt^2} C_1 &= -\frac{v}{2} C_1(t) -\frac{vt}{2} C_1^{\prime} + \Delta_0 C_2^{\prime}\\
+  i\frac{d^2}{dt^2} C_1
+  &= -\frac{v}{2} C_1(t) -\frac{vt}{2} C_1^{\prime} + \Delta_0 C_2^{\prime}\\
   &= -\frac{v}{2} C_1(t) -\frac{vt}{2} C_1^{\prime} + \Delta_0 \left( \frac{\Delta_0}{i} C_1 + \frac{vt}{2i} C_2 \right) \label{C1_A}
 \end{align}
 また，式(\ref{LZ2})を微分して式(\ref{LZ1})を代入すると．同様の計算から，
@@ -1564,7 +1589,8 @@ TLZ遷移を含むcyclic evolutionで整流作用を取り入れない系のHami
 \end{align}
 と書ける．ここで，
 \begin{align}
-  z^n &= z^{i\delta}\\
+  z^n
+  &= z^{i\delta}\\
   &= \exp(i\delta \log z)\\
   &= \exp(i\delta (\log \sqrt{v} e^{-\frac{i\pi}{4}} |t|))\\
   &= \exp \left( i\delta (\log (\sqrt{v} |t|) - \frac{i\pi}{4} \right)
@@ -1600,7 +1626,8 @@ TLZ遷移を含むcyclic evolutionで整流作用を取り入れない系のHami
 一方，$t \rightarrow \infty$のとき，
 \begin{align}
   z &= \sqrt{v} e^{i\frac{3\pi}{4}},\\
-  z^n &= z^{i\delta}\\
+  z^n
+  &= z^{i\delta}\\
   &= \exp(i\delta \log z)\\
   &= \exp ( i\delta \log (\sqrt{v} t e^{i\frac{3\pi}{4}}))\\
   &= \exp \left( i\delta (\log \sqrt{v} t) + i\frac{3\pi}{4} \right)
@@ -1618,7 +1645,8 @@ TLZ遷移を含むcyclic evolutionで整流作用を取り入れない系のHami
 \end{equation}
 となる．また，$C_2(t)$については，$t \rightarrow \infty$(第1項)$\rightarrow 0$より，
 \begin{align}
-  \lim_{t \rightarrow \infty} C_2(t) &= -B \frac{\sqrt{2 \pi}}{\Gamma(n+1)} e^{i(n-1) \pi} e^{\frac{z^2}{4}} z^{-n} \\
+  \lim_{t \rightarrow \infty} C_2(t)
+  &= -B \frac{\sqrt{2 \pi}}{\Gamma(n+1)} e^{i(n-1) \pi} e^{\frac{z^2}{4}} z^{-n} \\
   &= -B \frac{\sqrt{2 \pi}}{\Gamma(1-i \delta)} \exp \left(i(i \delta-1) \pi-\frac{i v t^2}{4}-i \delta \log (\sqrt{v} t) \frac{3 \pi   \delta}{4}\right) \\
   & = B \frac{\sqrt{2 \pi}}{\Gamma(1-i \delta)} \exp \left(-\frac{\pi \delta}{4}-\frac{i v t^2}{4}-i \delta \log \sqrt{v} t\right)
 \end{align}
@@ -1719,7 +1747,8 @@ Shr\"{o}dinger方程式
 \end{equation}
 の固有値は，
 \begin{align}
-  E_{\pm} &= \frac{H_{11} + H_{22}}{2} \pm \frac{\sqrt{(H_{11}-H_{22})^2 + 4 H_{12}^2}}{2}\\
+  E_{\pm}
+  &= \frac{H_{11} + H_{22}}{2} \pm \frac{\sqrt{(H_{11}-H_{22})^2 + 4 H_{12}^2}}{2}\\
   &:= \bar{E} \pm \frac{\delta E}{2}
 \end{align}
 となる．また，
@@ -1751,7 +1780,8 @@ Shr\"{o}dinger方程式
 \end{equation}
 となる．ここで，
 \begin{align}
-  \delta E^2 &= (H_{11} - H_{22})^2 + 4 H_{12}^2\\
+  \delta E^2
+  &= (H_{11} - H_{22})^2 + 4 H_{12}^2\\
   &= (H_{11} - H_{22} + 2i H_{12})(H_{11} - H_{22} - 2i H_{12})
 \end{align}
 であり，$\delta E = \alpha (t - t_c)^{\frac{1}{2}}$とすると，
@@ -1792,7 +1822,8 @@ Shr\"{o}dinger方程式
 \end{equation}
 となる．また，
 \begin{align}
-  \Delta(t) &= \int_0^t d\tau \delta E\\
+  \Delta(t)
+  &= \int_0^t d\tau \delta E\\
   &\approx \int_0^t d\tau \alpha (t - t_c)^{\frac{1}{2}}\\
   &= \frac{2\alpha (t-t_c)^{\frac{3}{2}}}{3} - \frac{2}{3} \alpha t_c^{\frac{3}{2}}\\
   &= \frac{2\alpha (t-t_c)^{\frac{3}{2}}}{3} + \Delta(t_c)
@@ -1846,7 +1877,8 @@ $\tilde{a}_1(-\infty) =1$，$\tilde{a}_2(-\infty) = 0$とすると，
 より，
 \begin{align}
   &\sum_{n=0}^{\infty} \frac{n ! \alpha_n}{(i x)^n} = 1+\sum_{m=1}^{\infty} \sum_{k=0}^{m-1}\left(-\frac{1}{36 m^2}\right) \frac{\alpha_k m !}{(i x)^n} \\
-  \Leftrightarrow &1+\sum_{n=1}^{\infty} \frac{n! \alpha_n}{(i x)^n} = 1+\sum_{m=1}^{\infty} \sum_{k=0}^{m-        1}\left(-\frac{1}{36 m^2}\right) \frac{\alpha_k m !}{(i x)^m}
+  \Leftrightarrow
+  &1 + \sum_{n=1}^{\infty} \frac{n! \alpha_n}{(i x)^n} = 1+\sum_{m=1}^{\infty} \sum_{k=0}^{m-1}\left(-\frac{1}{36 m^2}\right) \frac{\alpha_k m !}{(i x)^m}
 \end{align}
 となる．ここで，あらためて$m \rightarrow n, k \rightarrow m$として，両辺を比較すると，
 \begin{equation}
@@ -1858,14 +1890,16 @@ $\tilde{a}_1(-\infty) =1$，$\tilde{a}_2(-\infty) = 0$とすると，
 \end{equation}
 とすると，
 \begin{align}
-  \beta_{n+1} &= -36 (n+1)^2 \alpha_{n+1}\\
+  \beta_{n+1}
+  &= -36 (n+1)^2 \alpha_{n+1}\\
   &= \sum_{m=0}^n \alpha_m\\
   &= \alpha_n - 36n^2 \alpha_n\\
   &= \left(1-\frac{1}{36n^2} \right) \beta_n\\
 \end{align}
 より，
 \begin{align}
-  \beta_n &= \left(1-\frac{1}{36(n-1)^2} \right) \left( 1-\frac{1}{36(n-2)^2} \right) \cdots \left( 1-\frac{1}{36\cdot 1^2} \right) \beta_1\\
+  \beta_n
+  &= \left(1-\frac{1}{36(n-1)^2} \right) \left( 1-\frac{1}{36(n-2)^2} \right) \cdots \left( 1-\frac{1}{36\cdot 1^2} \right) \beta_1\\
   &= \prod_{m=1}^{n-1} \left( 1-\frac{1}{36m^2} \right) 
 \end{align}
 となる．一方，
@@ -1874,11 +1908,12 @@ $\tilde{a}_1(-\infty) =1$，$\tilde{a}_2(-\infty) = 0$とすると，
 \end{align}
 である．実際，
 \begin{align}
-  \tilde{a}_2(\infty) &= \int_{\infty}^{\infty} dx \frac{e^{ix}}{6ix} \tilde{a}_1\\
+  \tilde{a}_2(\infty)
+  &= \int_{\infty}^{\infty} dx \frac{e^{ix}}{6ix} \tilde{a}_1\\
   &= \sum_{n=0}^{\infty} \int_{\infty}^{\infty} dx \frac{n! e^{ix} \alpha_n}{6 (ix)^{n+1}}\\
   &= \sum_{n=0}^{\infty} \frac{n! \alpha_n}{6 i^{n+1}} \int_{\infty}^{\infty} dx \frac{e^{ix}}{x^{n+1}}\\
-  &= \sum_{n=0}^{\infty} \frac{n! \alpha_n}{6 i^{n+1}} \left( \left. \frac{e^ix}{(-nx^n)} \right|_{\infty}^{\infty}  - \int_{\infty}^{\infty} dx \frac{ie^ix}{(-nx^n)} \right)\\
-  &= \sum_{n=0}^{\infty} \frac{n! \alpha_n}{6 i^{n+1}} \left( \left. \frac{e^ix}{(-nx^n)} \right|_{\infty}^{\infty}  + \left. \frac{ie^{ix}}{n(-(n-1))} \right|_{\infty}^{\infty} - \int_{\infty}^{\infty} dx \frac{i^2 e^ix}{(n(-(n-1))x^{n-1}} \right) \\
+  &= \sum_{n=0}^{\infty} \frac{n! \alpha_n}{6 i^{n+1}} \left( \left. \frac{e^ix}{(-nx^n)} \right|_{\infty}^{\infty} - \int_{\infty}^{\infty} dx \frac{ie^ix}{(-nx^n)} \right)\\
+  &= \sum_{n=0}^{\infty} \frac{n! \alpha_n}{6 i^{n+1}} \left( \left. \frac{e^ix}{(-nx^n)} \right|_{\infty}^{\infty} + \left. \frac{ie^{ix}}{n(-(n-1))} \right|_{\infty}^{\infty} - \int_{\infty}^{\infty} dx \frac{i^2 e^ix}{(n(-(n-1))x^{n-1}} \right) \\
   &=\sum_{n=0}^{\infty} \frac{n! \alpha_n}{6 i^{n+1}} \left( \left. \frac{i^{n-1} e^{ix}}{-n\cdots (n-(n-1))x} \right|_{\infty}^{\infty} + \int_{\infty}^{\infty} dx \frac{i^n e^{ix}}{n! x} \right)\\
   &=\sum_{n=0}^{\infty} \frac{n! \alpha_n}{6 i^{n+1}} \int_{\infty}^{\infty} dx \frac{i^n e^{ix}}{n! x}\\
   &= \sum_{n=0}^{\infty} \alpha_n \int_{\infty}^{\infty} \frac{e^{ix}}{6ix}\\
@@ -1890,7 +1925,8 @@ $\tilde{a}_1(-\infty) =1$，$\tilde{a}_2(-\infty) = 0$とすると，
 \end{equation}
 を用いると，
 \begin{align}
-  \sum_{m=0}^{\infty} \alpha_n &= \lim_{n \rightarrow \infty} (-36n^2 \alpha_n)\\
+  \sum_{m=0}^{\infty} \alpha_n
+  &= \lim_{n \rightarrow \infty} (-36n^2 \alpha_n)\\
   &= \lim_{n \rightarrow \infty} \beta_n\\
   &= \prod_{m=1}^{\infty} \left( 1-\frac{1}{36m^2} \right)\\
   &= \frac{3}{\pi}
