@@ -289,18 +289,18 @@ $\bm{R}(0) = \bm{R}(T)$として，$t$が$0$から$T$まで変化するとき，
 
 
 第2章と同様に，2準位系のHermiteなHamiltonianを
-    \begin{align}
-    \Hat{H}(t)&:=x(t)\Hat{\sigma}_x + y(t) \Hat{\sigma}_y + z(t) \Hat{\sigma}_z\\
-    &=
-    \begin{pmatrix} 
-    z(t) & x(t) - iy(t)\\
-    x(t) + iy(t) & -z(t)\\
-    \end{pmatrix}\\
-    &= E_2(t)
-    \begin{pmatrix} 
-    \cos \theta(t)&\sin \theta(t) \exp(-i\phi(t))\\
-    \sin \theta(t) \exp(+i\phi(t))&-\cos \theta(t)\\
-    \end{pmatrix}
+\begin{align}
+  \Hat{H}(t)&:=x(t)\Hat{\sigma}_x + y(t) \Hat{\sigma}_y + z(t) \Hat{\sigma}_z\\
+  &=
+  \begin{pmatrix} 
+  z(t) & x(t) - iy(t)\\
+  x(t) + iy(t) & -z(t)\\
+  \end{pmatrix}\\
+  &= E_2(t)
+  \begin{pmatrix} 
+  \cos \theta(t)&\sin \theta(t) \exp(-i\phi(t))\\
+  \sin \theta(t) \exp(+i\phi(t))&-\cos \theta(t)\\
+  \end{pmatrix}
 \end{align}
 とする．ただし，直交座標$\{x(t), y(t), z(t)\}$から極座標$\{E_2(t), \theta(t), \phi(t)\}$への変換式
 \begin{align}
@@ -319,7 +319,7 @@ $\bm{R}(0) = \bm{R}(T)$として，$t$が$0$から$T$まで変化するとき，
 \begin{equation}
   | \phi_2(t) \rangle = \exp(i\mu(t))
   \begin{pmatrix}
-       \cos(\frac{\theta(t)}{2})\exp(-i\frac{\phi(t)}{2})\\[8pt]
+    \cos(\frac{\theta(t)}{2})\exp(-i\frac{\phi(t)}{2})\\[8pt]
     \sin(\frac{\theta(t)}{2})\exp(+i\frac{\phi(t)}{2})
   \end{pmatrix}
 \end{equation}
@@ -342,7 +342,7 @@ $\mu(t)$が非断熱遷移の確率にどのような影響を与えるか調べ
   \begin{pmatrix} 
     \exp(-i\frac{1}{2} \phi(t))&0\\
     0&\exp(i\frac{1}{2} \phi(t))\\
-\end{pmatrix}
+  \end{pmatrix}
 \end{equation}
 を定義する．このとき，
 \begin{align}
@@ -382,11 +382,11 @@ $\mu(t)$が非断熱遷移の確率にどのような影響を与えるか調べ
 \end{equation}
 となる．左から$\Hat{U}^{\dagger}$をかけると，
 \begin{equation}
-   \Hat{U}^{\dagger} \Hat{H} \Hat{U} |\psi_{\mathrm{LZ}}(t) \rangle = i \hbar \left(\Hat{U}^{\dagger} \frac{\partial}{\partial t} \Hat{U} \right)|\psi_{\mathrm{LZ}}(t) \rangle + i \hbar \frac{\partial}{\partial t} |\psi_{\mathrm{LZ}}(t) \rangle \label{SE_LZ1}
+  \Hat{U}^{\dagger} \Hat{H} \Hat{U} |\psi_{\mathrm{LZ}}(t) \rangle = i \hbar \left(\Hat{U}^{\dagger} \frac{\partial}{\partial t} \Hat{U} \right)|\psi_{\mathrm{LZ}}(t) \rangle + i \hbar \frac{\partial}{\partial t} |\psi_{\mathrm{LZ}}(t) \rangle \label{SE_LZ1}
 \end{equation}
 となる．また，ユニタリ変換後のHamiltonian $H_{\mathrm{LZ}}$および$|\psi_{\mathrm{LZ}}(t) \rangle := U^{\dagger} |\psi(t) \rangle$に対して，Shr\"{o}dinger方程式
 \begin{equation}
-   \Hat{H}_{\mathrm{LZ}}(t) |\psi_{\mathrm{LZ}}(t) \rangle = i\hbar \frac{\partial}{\partial t} |\psi_{\mathrm{LZ}}(t) \rangle  \label{SE_LZ}
+  \Hat{H}_{\mathrm{LZ}}(t) |\psi_{\mathrm{LZ}}(t) \rangle = i\hbar \frac{\partial}{\partial t} |\psi_{\mathrm{LZ}}(t) \rangle  \label{SE_LZ}
 \end{equation} 
 が成り立つから，式(\ref{SE_LZ1})に，式(\ref{SE_LZ})を代入して整理すると，
 \begin{equation}
@@ -394,11 +394,11 @@ $\mu(t)$が非断熱遷移の確率にどのような影響を与えるか調べ
 \end{equation}
 が得られる．これを計算すると，ユニタリ変換後のHamiltonian $H_{\mathrm{LZ}}$は，
 \begin{equation}
-    \Hat{H}_{\mathrm{LZ}}(t) =
-    \begin{pmatrix}
-      \left(z - \hbar \frac{\partial_t \phi}{2} \frac{dt}{d\tau}\right) & \sqrt{x^2+y^2}\\
-      \sqrt{x^2+y^2} & -\left(z - \hbar \frac{\partial_t \phi}{2} \frac{dt}{d\tau}\right)
-    \end{pmatrix}
+  \Hat{H}_{\mathrm{LZ}}(t) =
+  \begin{pmatrix}
+    \left(z - \hbar \frac{\partial_t \phi}{2} \frac{dt}{d\tau}\right) & \sqrt{x^2+y^2}\\
+    \sqrt{x^2+y^2} & -\left(z - \hbar \frac{\partial_t \phi}{2} \frac{dt}{d\tau}\right)
+  \end{pmatrix}
 \end{equation}
 となる．したがって，複素Hamiltonian $H$を，実対称Hamiltonian $H_{\mathrm{LZ}}$に変換することができた．
 
@@ -471,7 +471,7 @@ LZモデルのHamiltonianは，
 
 この系における$|\phi_2(t)\rangle$から$|\phi_1(t)\rangle$へ遷移する確率$P_{\mathrm{LZ}}$は，
 \begin{equation}
-P_{\mathrm{LZ}}=\exp \left(-\frac{\pi \Delta_0^2}{\hbar \varepsilon_0 } \right) 
+  P_{\mathrm{LZ}}=\exp \left(-\frac{\pi \Delta_0^2}{\hbar \varepsilon_0 } \right) 
 \end{equation}
 であることが知られている．これをLandau-Zener公式と呼ぶ．
 
@@ -511,7 +511,7 @@ LZモデルと同様に，Pauli行列を基底としたパラメータ空間に$
 
 $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_y = \frac{1}{2} \kappa_g \varepsilon_0^2$として$t^2$の項まで展開すると，
 \begin{equation}
-\Hat{H}_{\mathrm{TLZ}} = \Delta_0 \, \Hat{\sigma}_x + \frac{1}{2} \kappa_g \varepsilon_0^2 (\delta \tau)^2 \, \Hat{\sigma}_y + \varepsilon_0 \delta \tau \, \Hat{\sigma}_z
+  \Hat{H}_{\mathrm{TLZ}} = \Delta_0 \, \Hat{\sigma}_x + \frac{1}{2} \kappa_g \varepsilon_0^2 (\delta \tau)^2 \, \Hat{\sigma}_y + \varepsilon_0 \delta \tau \, \Hat{\sigma}_z
 \end{equation}
 となる．ただし，$\kappa_g$は${\tau}=0$における測地曲率である．
 
@@ -522,7 +522,7 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
 \end{equation}
 をそれぞれ曲線の接ベクトル，曲率ベクトルと呼ぶ．また，曲面$S$の法ベクトルを$\bm{n}(s)$とする．このとき，
 \begin{equation}
- \kappa_g =  \left(\bm{n}(s) \times \frac{d C(s)}{d s} \right)\cdot \frac{d^2 C(s)}{d s^2}
+  \kappa_g =  \left(\bm{n}(s) \times \frac{d C(s)}{d s} \right)\cdot \frac{d^2 C(s)}{d s^2}
 \end{equation}
 を測地曲率と呼ぶ．TLZモデルにおける測地曲率のイメージ図を図\ref{fig:geodesic_curvature}で示しておく．青い矢印で表される曲率ベクトルを灰色の接平面に射影したときの長さが測地曲率である．
 
@@ -537,11 +537,11 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
 
 このモデルにおける遷移確率は，
 \begin{equation}
-  P(\delta)= \exp \left[-\pi \frac{(\Delta_0 -\frac{\kappa_g \varepsilon_0 \delta}{4})^2}{\varepsilon_0 |\delta|}\right] \label{TLZ_TP}
+  P(\delta) = \exp \left[-\pi \frac{(\Delta_0 -\frac{\kappa_g \varepsilon_0 \delta}{4})^2}{\varepsilon_0 |\delta|}\right] \label{TLZ_TP}
 \end{equation}
 となることが知られている\cite{Oka}．次節でこの遷移確率を導出する．また，QGPを用いて書き換えると，
 \begin{equation}
-  P(\delta)= \exp \left[-\frac{\pi}{4\varepsilon_0 |\delta|} \left(\Delta_0 + \frac{\delta \Delta_{21}}{2}\right)\right]
+  P(\delta) = \exp \left[-\frac{\pi}{4\varepsilon_0 |\delta|} \left(\Delta_0 + \frac{\delta \Delta_{21}}{2}\right)\right]
 \end{equation}
 となる．この式は，Landau-Zenerモデルにおいて，
 \begin{equation}
@@ -559,7 +559,7 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
 \section{TLZモデルにおける遷移確率の導出}
 本節では，式(\ref{TLZ_TP})を導出する．そのために，
 \begin{equation}
-  \bm{d}(t):=(x(t),y(t),z(t))^T \label{d}
+  \bm{d}(t) := (x(t),y(t),z(t))^T \label{d}
 \end{equation}
 として，$t=0$における3つの量
 \begin{align}
@@ -571,9 +571,9 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
 \begin{equation}
   \bm{d} =
   \begin{pmatrix}
-         \Delta_0\\
-         \frac{1}{2} \kappa_g \varepsilon_0^2 t^2\\
-         \varepsilon_0 t\\
+    \Delta_0\\
+    \frac{1}{2} \kappa_g \varepsilon_0^2 t^2\\
+    \varepsilon_0 t\\
   \end{pmatrix}
 \end{equation}
 である場合を考えればよい．このとき，動径ベクトル(\ref{r})，接ベクトル(\ref{t})，法ベクトル(\ref{n})はそれぞれ，
@@ -611,9 +611,9 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
 \begin{align}
   a(t) &= 
   \begin{pmatrix}
-         \Delta_0\\
-         \frac{1}{2} \kappa_g \varepsilon_0^2 t^2\\
-         \varepsilon_0 t\\
+    \Delta_0\\
+    \frac{1}{2} \kappa_g \varepsilon_0^2 t^2\\
+    \varepsilon_0 t\\
   \end{pmatrix}
   \cdot
   \begin{pmatrix}
@@ -622,16 +622,17 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
     0\\
   \end{pmatrix}\\
   &= \Delta_0,\\
-  b(t) &= \sqrt{\left| \begin{pmatrix}
-         \Delta_0\\
-         \frac{1}{2} \kappa_g \varepsilon_0^2 t^2\\
-         \varepsilon_0 t\\
-  \end{pmatrix} \right|^2
-  -\Delta_0^2}\\
+  b(t) &= \sqrt{\left|
+  \begin{pmatrix}
+    \Delta_0\\
+    \frac{1}{2} \kappa_g \varepsilon_0^2 t^2\\
+    \varepsilon_0 t\\
+  \end{pmatrix}
+  \right|^2 -\Delta_0^2}\\
   &= \sqrt{(\varepsilon_0 t)^2 + (\frac{1}{2} \kappa_g \varepsilon_0^2 t^2)^2}\\
   &\approx
   \varepsilon_0 t (1+ (\frac{1}{2} \kappa_g \varepsilon_0 \tau)^2)^{\frac{1}{2}}\\
- &=
+  &=
   \varepsilon_0 t + O(t^3),\\
   \phi(t)
   &=
@@ -642,7 +643,7 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
   \partial_t \phi(t)
   &=
   \frac{\frac{\kappa_g \varepsilon_0 t}{2}}{1+(\frac{\kappa_g \varepsilon_0 t}{2})^2}\\
- &=
+  &=
   \frac{\kappa_g \varepsilon_0}{2} (1-(\frac{\kappa_g \varepsilon_0 t}{2})^2)^{-1}\\
   &=
   \frac{\kappa_g \varepsilon_0}{2} + O(t^2)
@@ -695,12 +696,12 @@ $\phi(t) \propto t^2$の場合について，詳しく見てみよう．$\Delta_
 \section{LZ遷移を含むcyclic evolution}
 cyclic evolutionの例として，LZ遷移を周期的に繰り返す系を考えよう\cite{Kayanuma1993}．この系のHamiltonianは，
 \begin{align}
-    \Hat{H}_{\mathrm{CE}} &=
-    \begin{pmatrix}
-        \varepsilon_0 \cos \omega t& \Delta_0 C(t)\\
-        \Delta_0 C(t) & -\varepsilon_0 \cos \omega t
-    \end{pmatrix} \\
-    &= \Delta_0 C(t) \, \Hat{\sigma}_x + \varepsilon_0 \cos \omega t \, \Hat{\sigma}_z \label{H_CE_LZ}
+  \Hat{H}_{\mathrm{CE}} &=
+  \begin{pmatrix}
+    \varepsilon_0 \cos \omega t& \Delta_0 C(t)\\
+    \Delta_0 C(t) & -\varepsilon_0 \cos \omega t
+  \end{pmatrix} \\
+  &= \Delta_0 C(t) \, \Hat{\sigma}_x + \varepsilon_0 \cos \omega t \, \Hat{\sigma}_z \label{H_CE_LZ}
 \end{align}
 で表される．ただし，$\omega$は角振動数である．
 
@@ -735,7 +736,7 @@ cyclic evolutionの例として，LZ遷移を周期的に繰り返す系を考�
     \sqrt{q} & -\sqrt{1-q} e^{i\phi_s}\\
     \sqrt{1-q} e^{i\phi_s} & \sqrt{q}
   \end{pmatrix},\\
-    H &=
+  H &=
   \begin{pmatrix}
     e^{i\eta}  & 0\\
     0 & e^{-i\eta}
@@ -789,7 +790,7 @@ cyclic evolutionの例として，LZ遷移を周期的に繰り返す系を考�
     M_{21} & M_{22}
   \end{pmatrix}
   \begin{pmatrix}
-     c_1^-\\
+    c_1^-\\
     c_2^-
   \end{pmatrix}
 \end{equation}
@@ -797,7 +798,7 @@ cyclic evolutionの例として，LZ遷移を周期的に繰り返す系を考�
 
 まず，$M_{11}$を求める．Shr\"{o}dinger方程式(\ref{SE})に，系のHamiltonian(\ref{H_CE_LZ})を代入して，
 \begin{equation}
-    i\frac{d}{dt} c_1(t) = -\frac{vt}{2} c_1(t) + \Delta_0 c_2(t)
+  i\frac{d}{dt} c_1(t) = -\frac{vt}{2} c_1(t) + \Delta_0 c_2(t)
 \end{equation}
 となる．ここで，
 \begin{align}
@@ -874,20 +875,28 @@ cyclic evolutionの例として，LZ遷移を周期的に繰り返す系を考�
 \end{equation}
 また，$t \rightarrow -\infty$のときの$\chi$は，符号を反転させればよい．したがって，
 \begin{align}
-\lim _{t \rightarrow-\infty}\left(\begin{array}{l}
-c_1(t) \\
-c_2(t)
-\end{array}\right) &=\left(\begin{array}{ll}
-c_1^{-} & e^{i \chi} \\
-c_2^{-} & e^{-i \chi}
-\end{array}\right) \\
-\lim _{t \rightarrow \infty}\left(\begin{array}{l}
-c_1(t) \\
-c_2(t)
-\end{array}\right) &= \left(\begin{array}{ll}
-c_1^{+} & e^{i \chi} \\
-c_2^{+} & e^{-i \chi}
-\end{array}\right) \label{C1_C2}
+  \lim _{t \rightarrow-\infty}\left(
+  \begin{array}{l}
+    c_1(t) \\
+    c_2(t)
+  \end{array}
+  \right) &=\left(
+  \begin{array}{ll}
+    c_1^{-} & e^{i \chi} \\
+    c_2^{-} & e^{-i \chi}
+  \end{array}
+  \right) \\
+  \lim _{t \rightarrow \infty}\left(
+  \begin{array}{l}
+    c_1(t) \\
+    c_2(t)
+  \end{array}
+  \right) &= \left(
+  \begin{array}{ll}
+    c_1^{+} & e^{i \chi} \\
+    c_2^{+} & e^{-i \chi}
+  \end{array}
+  \right) \label{C1_C2}
 \end{align}
 を仮定すると，Landau-Zener公式より，
 \begin{equation}
@@ -931,7 +940,7 @@ c_2^{+} & e^{-i \chi}
   \sqrt{2} e^{-\frac{\pi \bar{\delta}}{2}}\left(\frac{1}{2}\left(e^{\pi \bar{\delta}}-e^{-\pi \bar{\delta}}\right)\right)^{\frac{1}{2}} e^{-i \phi_s} c_1^{-} \\
   & =(e^{-\pi \bar{\delta}}\left(e^{\pi \bar{\delta}}-e^{-\pi \bar{\delta}}\right))^{\frac{1}{2}} e^{-i \phi_s} c_1^{-} \\ 
   & =\sqrt{1-e^{-2 \pi \bar{\delta}}} e^{-i \phi_s} c_1^{-}
-  \end{align}
+\end{align}
 より，
 \begin{equation}
   c_2^+ = \sqrt{1 - e^{-2\pi \bar{\delta}}} e^{-i\phi_s} c_1^-
@@ -983,7 +992,8 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
   \begin{pmatrix}
     \varepsilon_0 \cos \omega t & \Delta_0 \sin \omega t\\
     \Delta_0 \sin \omega t & -\varepsilon_0 \cos \omega t
-  \end{pmatrix} \label{H_1997}
+  \end{pmatrix}
+  \label{H_1997}
 \end{equation}
 である\cite{Kayanuma1997}．また，$M$および$G$に対応する行列は，それぞれの複素共役行列である．そのため，初期状態を$\psi_0 = (1,0)$とすると，
 \begin{align}
@@ -1067,21 +1077,21 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
 \end{equation}
 と書ける．式(\ref{relation_S})から明らかな条件$\beta_0 = 0$，$\beta_1=0$を用いると，
 \begin{equation}
-\left\{ \,
-    \begin{aligned}
+  \left\{ \,
+  \begin{aligned}
     & C_1 + C_2 &= 0 \\
     & C_1 e^{i\xi} + C_2 e^{-i\xi} &= 1 
-    \end{aligned}
-\right.
+  \end{aligned}
+  \right.
 \end{equation}
 という2元連立方程式が得られる．よって，
 \begin{equation}
-\left\{ \,
+  \left\{ \,
     \begin{aligned}
     &  C_1 &= \frac{1}{2i\sin \xi}\\
     &  C_2 &= -\frac{1}{2i\sin \xi}
     \end{aligned}
-\right.
+  \right.
 \end{equation}
 と決定される．これらを，式(\ref{DE})に代入すると，
 \begin{align}
@@ -1092,10 +1102,11 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
 \begin{align}
   \psi_{2m-1} &= T (T^* T)^{m-1} \psi_0\\
   &= T (-1)^{m-1} S^{2m-2} \psi_0\\
-  &= \begin{pmatrix}
-     \sqrt{q} \beta_{2m-1}\\
+  &= 
+  \begin{pmatrix}
+    \sqrt{q} \beta_{2m-1}\\
     \sqrt{1-q} e^{-i(\phi_s+\theta)} \beta_{2m-1} - \beta_{2m-2}
-\end{pmatrix}
+  \end{pmatrix}
 \end{align}
 となる．また，同様の計算から，式(\ref{psi_2m})は，
 \begin{align}
@@ -1103,7 +1114,7 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
   \begin{pmatrix}
     \sqrt{1-q} e^{-i(\phi_s+\theta)} \beta_{2m} - \beta_{2m-1}\\
     -\sqrt{q} \beta_{2m}
-\end{pmatrix}
+  \end{pmatrix}
 \end{align}
 となる．したがって，この系が，$t = \frac{(2m-1)\pi}{\omega}, \frac{2m \pi}{\omega}$においてそれぞれ状態$|1\rangle$にある確率$P_{2m-1}, P_{2m}$は，
 \begin{align}
@@ -1146,15 +1157,15 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
   \end{equation}
   より，
   \begin{align}
-  \chi_d^{(\mathrm{i})}　&= -i \int_0^{\frac{\pi}{2\omega}} \langle \psi(t) | \frac{\partial}{\partial t} | \psi(t) \rangle dt\\
-  &= -i \int_0^{\frac{\pi}{2\omega}} (e^{i\eta}, 0) \frac{\partial}{\partial t} dt
- \begin{pmatrix}
+    \chi_d^{(\mathrm{i})}　&= -i \int_0^{\frac{\pi}{2\omega}} \langle \psi(t) | \frac{\partial}{\partial t} | \psi(t) \rangle dt\\
+    &= -i \int_0^{\frac{\pi}{2\omega}} (e^{i\eta}, 0) \frac{\partial}{\partial t} dt
+    \begin{pmatrix}
       e^{-i\eta}\\
       0
     \end{pmatrix}\\
-  &= - i \int_0^{\frac{\pi}{2\omega}} \partial_t \eta dt\\
-  &= -\frac{\theta}{2}
-\end{align}
+    &= - i \int_0^{\frac{\pi}{2\omega}} \partial_t \eta dt\\
+    &= -\frac{\theta}{2}
+  \end{align}
 である．
 
 \item
@@ -1167,10 +1178,10 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
   \end{equation}
   より，
   \begin{align}
-  \chi_d^{(\mathrm{ii})}　&= -i \int_{\frac{\pi}{2\omega}}^{\frac{3\pi}{2\omega}} \langle \psi(t) | \frac{\partial}{\partial t} | \psi(t) \rangle dt\\
-  &= -i \int_{\frac{\pi}{2\omega}}^{\frac{3\pi}{2\omega}} \partial_t \eta (2q-1) dt\\
-  &= \theta(2q-1)
-\end{align}
+    \chi_d^{(\mathrm{ii})}　&= -i \int_{\frac{\pi}{2\omega}}^{\frac{3\pi}{2\omega}} \langle \psi(t) | \frac{\partial}{\partial t} | \psi(t) \rangle dt\\
+    &= -i \int_{\frac{\pi}{2\omega}}^{\frac{3\pi}{2\omega}} \partial_t \eta (2q-1) dt\\
+    &= \theta(2q-1)
+  \end{align}
 である．
 
 \item
@@ -1183,10 +1194,10 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
   \end{equation}
   より，
   \begin{align}
-  \chi_d^{(\mathrm{iii})}　&= -i \int_{\frac{3\pi}{2\omega}}^{\frac{2\pi}{\omega}} \langle \psi(t) | \frac{\partial}{\partial t} | \psi(t) \rangle dt\\
-  &= - i \int_{\frac{3\pi}{2\omega}}^{\frac{2\pi}{\omega}} \partial_t \eta dt\\
-  &= -\frac{\theta}{2}
-\end{align}
+    \chi_d^{(\mathrm{iii})} &= -i \int_{\frac{3\pi}{2\omega}}^{\frac{2\pi}{\omega}} \langle \psi(t) | \frac{\partial}{\partial t} | \psi(t) \rangle dt\\
+    &= - i \int_{\frac{3\pi}{2\omega}}^{\frac{2\pi}{\omega}} \partial_t \eta dt\\
+    &= -\frac{\theta}{2}
+  \end{align}
 である．
 \end{enumerate}
 したがって，系を1周したときの動力学的位相$\chi_d$は，
@@ -1222,40 +1233,40 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
 \begin{enumerate}
 \renewcommand{\labelenumi}{(\roman{enumi})}
   \item 
-  \begin{align}
-  \Hat{\rho}^{(\mathrm{i})} &=　\psi^{(\mathrm{i})\dagger} \psi^{(\mathrm{i})} \\
-  &=
-  \begin{pmatrix}
-    1 & 0\\
-    0 & 0
-  \end{pmatrix}
-  \implies
-  \Theta = 0, \Phi:\text{任意}
+    \begin{align}
+      \Hat{\rho}^{(\mathrm{i})} &= \psi^{(\mathrm{i})\dagger} \psi^{(\mathrm{i})} \\
+      &=
+      \begin{pmatrix}
+        1 & 0\\
+        0 & 0
+      \end{pmatrix}
+      \implies
+      \Theta = 0, \Phi:\text{任意}
     \end{align}
   である．\\
   \item
-  \begin{align}
-  \Hat{\rho}^{(\mathrm{ii})}  &=　\psi^{(\mathrm{ii})\dagger} \psi^{(\mathrm{ii})} \\
-  &=
-  \begin{pmatrix}
-    q & \sqrt{q(1-q)} e^{-i(\phi_s + 2 \eta)}\\
-    \sqrt{q(1-q)} e^{i(\phi_s + 2 \eta)} & 1-q
-  \end{pmatrix}
-  \implies
-  \Theta = 2 \cos^{-1} \sqrt{q}, \Phi= \phi_s + 2\eta
-\end{align}
+    \begin{align}
+      \Hat{\rho}^{(\mathrm{ii})}  &= \psi^{(\mathrm{ii})\dagger} \psi^{(\mathrm{ii})} \\
+      &=
+      \begin{pmatrix}
+        q & \sqrt{q(1-q)} e^{-i(\phi_s + 2 \eta)}\\
+        \sqrt{q(1-q)} e^{i(\phi_s + 2 \eta)} & 1-q
+      \end{pmatrix}
+      \implies
+      \Theta = 2 \cos^{-1} \sqrt{q}, \Phi= \phi_s + 2\eta
+    \end{align}
 である．\\
 \item
-\begin{align}
-  \Hat{\rho}^{(\mathrm{iii})}  &=　\psi^{(\mathrm{iii})\dagger} \psi^{(\mathrm{iii})} \\
-  &=
-  \begin{pmatrix}
-    1 & 0\\
-    0 & 0
-  \end{pmatrix}
-  \implies
-  \Theta = 0, \Phi:\text{任意}
-\end{align}
+  \begin{align}
+    \Hat{\rho}^{(\mathrm{iii})}  &= \psi^{(\mathrm{iii})\dagger} \psi^{(\mathrm{iii})} \\
+    &=
+    \begin{pmatrix}
+      1 & 0\\
+      0 & 0
+    \end{pmatrix}
+    \implies
+    \Theta = 0, \Phi:\text{任意}
+  \end{align}
 である．
 \end{enumerate}
 したがって，パラメータ空間上の$p$の経路は，図\ref{fig:AAP_1}のようになる．すなわち，(i)の間は北極に留まり続ける．その後，最初の準位交差点を超える瞬間に，$(\Theta_1, \Phi_1)$に移動する．その後は，$\Theta$の値を保ちながら，$\Phi$は$\Phi_1 = \phi_s$から$\Phi_2 = \phi_s + 2\theta$まで動く．すなわち，$xy$平面に平行に$\Phi_1$から$\Phi_2$まで移動する．さらに2回目の準位交差点を超える瞬間に，再び北極に戻る．
@@ -1342,7 +1353,7 @@ $C(t) =\sin \omega t$のとき，Hamiltonianは，
 \subsection{モデルの解説}
 TLZ遷移を含むcyclic evolutionに整流作用を取り入れた系におけるHamiltonianは
 \begin{equation}
-    \Hat{H} = \Delta_0 \sin \omega t \, \Hat{\sigma}_x +\frac{1}{4} \kappa_g \varepsilon_0^2 \cos \omega t \sin 2 \omega t \, \Hat{\sigma}_y + \varepsilon_0 \cos \omega t \, \Hat{\sigma}_z \label{TLZ_CE}
+  \Hat{H} = \Delta_0 \sin \omega t \, \Hat{\sigma}_x +\frac{1}{4} \kappa_g \varepsilon_0^2 \cos \omega t \sin 2 \omega t \, \Hat{\sigma}_y + \varepsilon_0 \cos \omega t \, \Hat{\sigma}_z \label{TLZ_CE}
 \end{equation}
 である．この系における断熱エネルギーの時間変化は図\ref{fig:CEwithTLZ}のようになる．初期状態が$|2\rangle$であるとき，1番目のTLZ遷移で2つの経路に分かれる．その後，2番目以降のTLZ遷移で2つの経路の干渉が生じる．
 
@@ -1360,36 +1371,36 @@ TLZ遷移を含むcyclic evolutionに整流作用を取り入れた系におけ�
 
 \begin{figure}[htbp]
   \centering
-\includegraphics[scale=0.5]{figures/TLZ_CE_Pauli_1.png}
-\caption{TLZモデルを含むcyclic evolution(\ref{TLZ_CE})におけるHamiltonianの経路}
+  \includegraphics[scale=0.5]{figures/TLZ_CE_Pauli_1.png}
+  \caption{TLZモデルを含むcyclic evolution(\ref{TLZ_CE})におけるHamiltonianの経路}
   \label{fig:TLZ_CE_Pauli_1}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-\includegraphics[scale=0.5]{figures/TLZ_CE_Pauli_2.png}
-\caption{TLZモデルを含むcyclic evolution(\ref{TLZ_CE})におけるHamiltonianの経路(別の角度からの視点)}
+  \includegraphics[scale=0.5]{figures/TLZ_CE_Pauli_2.png}
+  \caption{TLZモデルを含むcyclic evolution(\ref{TLZ_CE})におけるHamiltonianの経路(別の角度からの視点)}
   \label{fig:TLZ_CE_Pauli_2}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-\includegraphics[scale=0.5]{figures/TLZ_CE_Pauli_5.png}
-\caption{TLZモデルを含むcyclic evolution(\ref{TLZ_CE})におけるHamiltonianの経路($x$軸視点)}
+  \includegraphics[scale=0.5]{figures/TLZ_CE_Pauli_5.png}
+  \caption{TLZモデルを含むcyclic evolution(\ref{TLZ_CE})におけるHamiltonianの経路($x$軸視点)}
   \label{fig:TLZ_CE_Pauli_5}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-\includegraphics[scale=0.5]{figures/TLZ_CE_Pauli_4.png}
-\caption{TLZモデルを含むcyclic evolution(\ref{TLZ_CE})におけるHamiltonianの経路($y$軸視点)}
+  \includegraphics[scale=0.5]{figures/TLZ_CE_Pauli_4.png}
+  \caption{TLZモデルを含むcyclic evolution(\ref{TLZ_CE})におけるHamiltonianの経路($y$軸視点)}
   \label{fig:TLZ_CE_Pauli_4}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-\includegraphics[scale=0.5]{figures/TLZ_CE_Pauli_3.png}
-\caption{TLZモデルを含むcyclic evolution(\ref{TLZ_CE})におけるHamiltonianの経路($z$軸視点)}
+  \includegraphics[scale=0.5]{figures/TLZ_CE_Pauli_3.png}
+  \caption{TLZモデルを含むcyclic evolution(\ref{TLZ_CE})におけるHamiltonianの経路($z$軸視点)}
   \label{fig:TLZ_CE_Pauli_3}
 \end{figure}
 
@@ -1405,15 +1416,15 @@ TLZ遷移を含むcyclic evolutionに整流作用を取り入れた系におけ�
 
 \begin{figure}[htbp]
   \centering
-\includegraphics[scale=0.5]{figures/k_0.27.png}
-\caption{$\kappa_g=0.27$における$P(t)$の時間変化．$\varepsilon_0=90, \Delta_0 = 3, \omega=1$とした．}
+  \includegraphics[scale=0.5]{figures/k_0.27.png}
+  \caption{$\kappa_g=0.27$における$P(t)$の時間変化．$\varepsilon_0=90, \Delta_0 = 3, \omega=1$とした．}
   \label{fig:NR_k}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-\includegraphics[scale=0.5]{figures/k_0.png}
-\caption{$\kappa_g=0$における$P(t)$の時間変化．$\varepsilon_0=90, \Delta_0 = 3, \omega=1$とした．}
+  \includegraphics[scale=0.5]{figures/k_0.png}
+  \caption{$\kappa_g=0$における$P(t)$の時間変化．$\varepsilon_0=90, \Delta_0 = 3, \omega=1$とした．}
   \label{fig:NR_k=0}
 \end{figure}
 
@@ -1422,7 +1433,7 @@ TLZ遷移を含むcyclic evolutionに整流作用を取り入れた系におけ�
 
 TLZ遷移を含むcyclic evolutionで整流作用を取り入れない系のHamiltonianは
 \begin{align}
-   \Hat{H} = \Delta_0 \sin \omega t \, \Hat{\sigma}_x +\frac{1}{4} \kappa_g \varepsilon_0^2 \left| \cos \omega t \sin 2 \omega t \right| \, \Hat{\sigma}_y + \varepsilon_0 \cos \omega t \, \Hat{\sigma}_z \label{TLZ_CE_2}
+  \Hat{H} = \Delta_0 \sin \omega t \, \Hat{\sigma}_x +\frac{1}{4} \kappa_g \varepsilon_0^2 \left| \cos \omega t \sin 2 \omega t \right| \, \Hat{\sigma}_y + \varepsilon_0 \cos \omega t \, \Hat{\sigma}_z \label{TLZ_CE_2}
 \end{align}
 である．Pauli行列を基底とした空間に，このHamiltonianを描写すると図\ref{fig:TLZ_CE2_1}から図\ref{fig:TLZ_CE2_5}のようになる．図\ref{fig:TLZ_CE_Pauli_1}から図\ref{fig:TLZ_CE_Pauli_3}とは違い，$x$軸正の向きおよび負の向きともに$y$軸正の向きに曲率が付いている．また，$\kappa_g=0.27$として，系が状態$|1\rangle$である確率($|1\rangle$ occupation probability)の時間変化をプロットすると，図\ref{fig:TLZ_CE_perfect}のようになる．完全トンネルの条件を満たすようにパラメータを設定しているため，それぞれのTLZ遷移で，常に異なる断熱状態に遷移する．したがって，有限の断熱パラメータであるにもかかわらず，この系はあたかも透熱遷移のように振る舞う．
 
@@ -1430,36 +1441,36 @@ TLZ遷移を含むcyclic evolutionで整流作用を取り入れない系のHami
 
 \begin{figure}[htbp]
   \centering
-\includegraphics[scale=0.5]{figures/TLZ_CE2_1.png}
-\caption{TLZモデルを含むcyclic evolutionで整流作用を取り入れない系(\ref{TLZ_CE_2})におけるHamiltonianの経路}
+  \includegraphics[scale=0.5]{figures/TLZ_CE2_1.png}
+  \caption{TLZモデルを含むcyclic evolutionで整流作用を取り入れない系(\ref{TLZ_CE_2})におけるHamiltonianの経路}
   \label{fig:TLZ_CE2_1}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-\includegraphics[scale=0.5]{figures/TLZ_CE2_2.png}
-\caption{TLZモデルを含むcyclic evolutionで整流作用を取り入れない系(\ref{TLZ_CE_2})におけるHamiltonianの経路(別の角度からの視点)}
+  \includegraphics[scale=0.5]{figures/TLZ_CE2_2.png}
+  \caption{TLZモデルを含むcyclic evolutionで整流作用を取り入れない系(\ref{TLZ_CE_2})におけるHamiltonianの経路(別の角度からの視点)}
   \label{fig:TLZ_CE2_2}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-\includegraphics[scale=0.5]{figures/TLZ_CE2_3.png}
-\caption{TLZモデルを含むcyclic evolutionで整流作用を取り入れない系(\ref{TLZ_CE_2})におけるHamiltonianの経路($x$軸視点)}
+  \includegraphics[scale=0.5]{figures/TLZ_CE2_3.png}
+  \caption{TLZモデルを含むcyclic evolutionで整流作用を取り入れない系(\ref{TLZ_CE_2})におけるHamiltonianの経路($x$軸視点)}
   \label{fig:TLZ_CE2_3}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-\includegraphics[scale=0.5]{figures/TLZ_CE2_4.png}
-\caption{TLZモデルを含むcyclic evolutionで整流作用を取り入れない系(\ref{TLZ_CE_2})におけるHamiltonianの経路($y$軸視点)}
+  \includegraphics[scale=0.5]{figures/TLZ_CE2_4.png}
+  \caption{TLZモデルを含むcyclic evolutionで整流作用を取り入れない系(\ref{TLZ_CE_2})におけるHamiltonianの経路($y$軸視点)}
   \label{fig:TLZ_CE2_4}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-\includegraphics[scale=0.5]{figures/TLZ_CE2_5.png}
-\caption{TLZモデルを含むcyclic evolutionで整流作用を取り入れない系(\ref{TLZ_CE_2})におけるHamiltonianの経路($z$視点)}
+  \includegraphics[scale=0.5]{figures/TLZ_CE2_5.png}
+  \caption{TLZモデルを含むcyclic evolutionで整流作用を取り入れない系(\ref{TLZ_CE_2})におけるHamiltonianの経路($z$視点)}
   \label{fig:TLZ_CE2_5}
 \end{figure}
 
@@ -1588,11 +1599,11 @@ TLZ遷移を含むcyclic evolutionで整流作用を取り入れない系のHami
 
 一方，$t \rightarrow \infty$のとき，
 \begin{align}
- z &= \sqrt{v} e^{i\frac{3\pi}{4}},\\
- z^n &= z^{i\delta}\\
- &= \exp(i\delta \log z)\\
- &= \exp ( i\delta \log (\sqrt{v} t e^{i\frac{3\pi}{4}}))\\
- &= \exp \left( i\delta (\log \sqrt{v} t) + i\frac{3\pi}{4} \right)
+  z &= \sqrt{v} e^{i\frac{3\pi}{4}},\\
+  z^n &= z^{i\delta}\\
+  &= \exp(i\delta \log z)\\
+  &= \exp ( i\delta \log (\sqrt{v} t e^{i\frac{3\pi}{4}}))\\
+  &= \exp \left( i\delta (\log \sqrt{v} t) + i\frac{3\pi}{4} \right)
 \end{align}
 となる．ここで，放物柱関数$D_n(z)$に成り立つ定理
 \begin{quote}
@@ -1677,7 +1688,7 @@ Shr\"{o}dinger方程式
 \end{align}
 とする．式(\ref{Appendix_TM})に含まれる転送行列は，$\hbar \rightarrow 0$のとき，
 \begin{equation}
-   \begin{pmatrix}
+  \begin{pmatrix}
     1_- & \Gamma_-\\
     \Gamma_+ & 1_+
   \end{pmatrix}
@@ -1726,7 +1737,7 @@ Shr\"{o}dinger方程式
   |\phi_1\rangle &= 
   \begin{pmatrix}
     \cos \frac{\theta}{2}\\
-    - \sin \frac{\theta}{2}
+    -\sin \frac{\theta}{2}
   \end{pmatrix}\\
   |\phi_2\rangle &= 
   \begin{pmatrix}
@@ -1821,11 +1832,12 @@ $\tilde{a}_1(-\infty) =1$，$\tilde{a}_2(-\infty) = 0$とすると，
 \end{equation}
 であることがわかる．実際，
 \begin{align}
-  \tilde{a}_1(x) &= 1 + \frac{1}{36} \int_{-\infty}^x dx^{\prime} \frac{e^{-ix^{\prime}}}{x^{\prime}} \int_{-\infty}^{x^{\prime}} dx^{\prime\prime} \frac{e^{ix^{\prime\prime}}}{x^{\prime\prime}} \sum_{n=0}^{\infty} \frac{n! \alpha_n}{(ix^{\prime\prime})^n}\\
+  \tilde{a}_1(x) 
+  &= 1 + \frac{1}{36} \int_{-\infty}^x dx^{\prime} \frac{e^{-ix^{\prime}}}{x^{\prime}} \int_{-\infty}^{x^{\prime}} dx^{\prime\prime} \frac{e^{ix^{\prime\prime}}}{x^{\prime\prime}} \sum_{n=0}^{\infty} \frac{n! \alpha_n}{(ix^{\prime\prime})^n}\\
   &= 1+\frac{1}{36} \int_{-\infty}^x d x^{\prime} \frac{e^{-i x^{\prime}}}{x^{\prime}} \sum_{n=0}^{\infty} \frac{n! \alpha_n}{i^n} \int_{-\infty}^{x^{\prime}} d x^{\prime \prime} \frac{e^{i x^{\prime \prime}}}{\left(x^{\prime \prime}\right)^{n+1}}\\
   &= 1+\frac{1}{36} \int_{-\infty}^x d x^{\prime} \frac{e^{-i x^{\prime}}}{x^{\prime}} \sum_{n=0}^{\infty} \frac{n! \alpha_n}{i^n}\left(\left.\frac{e^{i x^{\prime \prime}}}{i (x^{\prime\prime})^{n+1}}\right|_{-\infty} ^{x^1}-\int_{-\infty}^{x^1} \frac{e^{i x^{\prime \prime}}-(n+1)}{i x^{n+2}}\right)\\
-  &=1+\frac{1}{36} \int_{-\infty}^x d x^{\prime} \frac{e^{-i x^{\prime}}}{x^{\prime}} \sum_{n=0}^{\infty} \frac{n ! \alpha_n}{i^n}\left(\frac{e^{i x^1}}{i (x^{\prime}){n+1}}+\frac{e^{i^2 x^{\prime}}(n+1)}{i\left(x^{\prime}\right)^{n+2}}+\cdots\right)\\
- &= 1+\frac{1}{36} \int_{-\infty}^x d x^{\prime} \frac{e^{-i x^{\prime}}}{x^{\prime}} \sum_{n=0}^{\infty} \sum_{k=0}^{\infty} \frac{\alpha_n(n+k) !}{\left(i x^{\prime}\right)^{n + k+1}} e^{i x^{\prime}}\\
+  &= 1+\frac{1}{36} \int_{-\infty}^x d x^{\prime} \frac{e^{-i x^{\prime}}}{x^{\prime}} \sum_{n=0}^{\infty} \frac{n ! \alpha_n}{i^n}\left(\frac{e^{i x^1}}{i (x^{\prime}){n+1}}+\frac{e^{i^2 x^{\prime}}(n+1)}{i\left(x^{\prime}\right)^{n+2}}+\cdots\right)\\
+  &= 1+\frac{1}{36} \int_{-\infty}^x d x^{\prime} \frac{e^{-i x^{\prime}}}{x^{\prime}} \sum_{n=0}^{\infty} \sum_{k=0}^{\infty} \frac{\alpha_n(n+k) !}{\left(i x^{\prime}\right)^{n + k+1}} e^{i x^{\prime}}\\
   &= 1 + \frac{1}{36} \sum_{n=0}^{\infty} \sum_{k=0}^{\infty} \frac{\alpha_n(n+k) !}{i^{n+k+1}} \int_{-\infty}^x d x^{\prime} (x^{\prime})^{-(n+k+2)}\\
   &= 1 + \frac{1}{36} \sum_{n=0}^{\infty} \sum_{k=0}^{\infty} \frac{\alpha_n(n+k) !}{i^{n+k+1}}\left(-\frac{1}{n+k+1} x^{-(n+k+1)}\right)\\
   &= 1 + \sum_{n=0}^{\infty} \sum_{(k=0}^{\infty}\left(-\frac{1}{36}\right) \frac{\alpha_n(n+k+1) !}{(ix)^{n+k+1}(n+k+1)^2}\\
@@ -1864,12 +1876,12 @@ $\tilde{a}_1(-\infty) =1$，$\tilde{a}_2(-\infty) = 0$とすると，
 \begin{align}
   \tilde{a}_2(\infty) &= \int_{\infty}^{\infty} dx \frac{e^{ix}}{6ix} \tilde{a}_1\\
   &= \sum_{n=0}^{\infty} \int_{\infty}^{\infty} dx \frac{n! e^{ix} \alpha_n}{6 (ix)^{n+1}}\\
-  &= \sum_{n=0}^{\infty}  \frac{n! \alpha_n}{6 i^{n+1}} \int_{\infty}^{\infty} dx \frac{e^{ix}}{x^{n+1}}\\
-  &= \sum_{n=0}^{\infty}  \frac{n! \alpha_n}{6 i^{n+1}} \left( \left. \frac{e^ix}{(-nx^n)} \right|_{\infty}^{\infty}  - \int_{\infty}^{\infty} dx \frac{ie^ix}{(-nx^n)} \right)\\
-  &= \sum_{n=0}^{\infty}  \frac{n! \alpha_n}{6 i^{n+1}} \left( \left. \frac{e^ix}{(-nx^n)} \right|_{\infty}^{\infty}  + \left. \frac{ie^{ix}}{n(-(n-1))} \right|_{\infty}^{\infty} - \int_{\infty}^{\infty} dx \frac{i^2 e^ix}{(n(-(n-1))x^{n-1}} \right) \\
-  &=\sum_{n=0}^{\infty}  \frac{n! \alpha_n}{6 i^{n+1}} \left( \left. \frac{i^{n-1} e^{ix}}{-n\cdots (n-(n-1))x} \right|_{\infty}^{\infty} + \int_{\infty}^{\infty} dx \frac{i^n e^{ix}}{n! x} \right)\\
-  &=\sum_{n=0}^{\infty}  \frac{n! \alpha_n}{6 i^{n+1}}  \int_{\infty}^{\infty} dx \frac{i^n e^{ix}}{n! x}\\
-  &= \sum_{n=0}^{\infty}  \alpha_n \int_{\infty}^{\infty} \frac{e^{ix}}{6ix}\\
+  &= \sum_{n=0}^{\infty} \frac{n! \alpha_n}{6 i^{n+1}} \int_{\infty}^{\infty} dx \frac{e^{ix}}{x^{n+1}}\\
+  &= \sum_{n=0}^{\infty} \frac{n! \alpha_n}{6 i^{n+1}} \left( \left. \frac{e^ix}{(-nx^n)} \right|_{\infty}^{\infty}  - \int_{\infty}^{\infty} dx \frac{ie^ix}{(-nx^n)} \right)\\
+  &= \sum_{n=0}^{\infty} \frac{n! \alpha_n}{6 i^{n+1}} \left( \left. \frac{e^ix}{(-nx^n)} \right|_{\infty}^{\infty}  + \left. \frac{ie^{ix}}{n(-(n-1))} \right|_{\infty}^{\infty} - \int_{\infty}^{\infty} dx \frac{i^2 e^ix}{(n(-(n-1))x^{n-1}} \right) \\
+  &=\sum_{n=0}^{\infty} \frac{n! \alpha_n}{6 i^{n+1}} \left( \left. \frac{i^{n-1} e^{ix}}{-n\cdots (n-(n-1))x} \right|_{\infty}^{\infty} + \int_{\infty}^{\infty} dx \frac{i^n e^{ix}}{n! x} \right)\\
+  &=\sum_{n=0}^{\infty} \frac{n! \alpha_n}{6 i^{n+1}} \int_{\infty}^{\infty} dx \frac{i^n e^{ix}}{n! x}\\
+  &= \sum_{n=0}^{\infty} \alpha_n \int_{\infty}^{\infty} \frac{e^{ix}}{6ix}\\
   &= \frac{\pi}{3} \sum_{m=0}^{\infty} \alpha_m
 \end{align}
 である．したがって，三角関数の無限積展開
@@ -1898,21 +1910,15 @@ $\tilde{a}_1(-\infty) =1$，$\tilde{a}_2(-\infty) = 0$とすると，
 \begin{thebibliography}{99}
   \bibitem{Berry1984}  M. V. Berry, Proc. R. Soc. Lond. A {\bf 392}, 45 (1984).
   \bibitem{Zener} C. Zener, Proc. R. Soc. Lond. A {\bf 137}, 696 (1932).
-   \bibitem{Kayanuma1993} Y. Kayanuma, Phys. Rev. B {\bf 47}, 9940 (1993).
-   \bibitem{Berry1990} M. V. Berry, Proc. R. Soc. Lond. A {\bf 430}, 405 (1990).
-
-    \bibitem{Oka} S. Takayoshi, J. Wu and T. Oka, SciPost Phys. {\bf 11}, 075 (2021).
-  
-       \bibitem{Dykhne} A. M. Dykhne, Sov. Phys. JETP {\bf 14}, 941 (1962).
+  \bibitem{Kayanuma1993} Y. Kayanuma, Phys. Rev. B {\bf 47}, 9940 (1993).
+  \bibitem{Berry1990} M. V. Berry, Proc. R. Soc. Lond. A {\bf 430}, 405 (1990).
+  \bibitem{Oka} S. Takayoshi, J. Wu and T. Oka, SciPost Phys. {\bf 11}, 075 (2021).
+  \bibitem{Dykhne} A. M. Dykhne, Sov. Phys. JETP {\bf 14}, 941 (1962).
   \bibitem{DavisPechukas1976} J. P. Davis and P. Pechukas, J. Chem. Phys. {\bf 64}, 3129 (1976).
   \bibitem{Hwang} J. -T. Hwang and P. Pechukas, J. Chem. Phys. {\bf 67}, 4640-4653 (1977).
   \bibitem{Wu2008} J.-d. Wu, M.-s. Zhao, J.-l. Chen and Y.-d. Zhang, Phys. Rev. A {\bf 77}, 062114 (2008).
-
-    \bibitem{Ivakhnenko} O.V. Ivakhnenko, S.N. Shevchenko and F. Nori, Phys. Rep. {\bf 995}, 1–131 (2023).
- 
-
-    \bibitem{Aharonov} Y. Aharonov and J. Anandan, Phys. Rev. Lett. {\bf 58}, 1593 (1987).
-
+  \bibitem{Ivakhnenko} O.V. Ivakhnenko, S.N. Shevchenko and F. Nori, Phys. Rep. {\bf 995}, 1–131 (2023).
+  \bibitem{Aharonov} Y. Aharonov and J. Anandan, Phys. Rev. Lett. {\bf 58}, 1593 (1987).
   \bibitem{Kayanuma1994} Y. Kayanuma, Phys. Rev. A {\bf 50}, 843 (1994).
   \bibitem{Kayanuma1997} Y. Kayanuma, Phys. Rev. A {\bf 55}, 2495 (1997).
 \end{thebibliography}
