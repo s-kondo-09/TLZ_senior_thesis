@@ -1,0 +1,197 @@
+\chapter{断熱遷移} \label{AT}
+本章では，量子力学における断熱遷移に関連する内容を説明する．
+
+\section{断熱状態}
+$N$準位系($N$-level system)のHamiltonianを$\Hat{H}(t)$，状態ベクトル(state vector)を$|\psi(t)\rangle$とすると，状態ベクトルの時間発展は，Shr\"{o}dinger方程式
+\begin{equation}
+  \label{SE}
+  i\hbar \frac{d}{dt} |\psi(t) \rangle = \Hat{H}(t) |\psi(t) \rangle
+\end{equation}
+で与えられる．
+また，各時刻$t$において，固有値方程式
+\begin{equation} 
+  \Hat{H}(t) |\phi_n(t) \rangle = E_n(t) |\phi_n(t) \rangle \quad (n = 1,\,2,\,\ldots,\,N) \label{EE}
+\end{equation}
+が成立する．ここで，$\Hat{H}(t)$の固有値$E_n(t)$を断熱エネルギー(adiabatic energy)あるいは瞬間エネルギー(instantaneous energy)と呼ぶ．また，それぞれの固有値に属する規格直交化された固有ベクトル$|\phi_n(t) \rangle$を断熱状態(adiabatic state)と呼ぶ．ただし，属する固有値が小さい順に添え字$n$をつける．
+
+
+断熱状態の組$\{|\phi_n(t) \rangle\}_{n=1}^N$は，完全系をなすことが知られている．この組を断熱基底(adiabatic base)と呼ぶ．断熱基底を用いると，系の状態ベクトル$|\psi(t)\rangle$は．
+\begin{equation}
+  |\psi(t) \rangle = \sum_{n=1}^{N} c_n(t) |\phi_n(t)\rangle  \quad (c_n(t) \in \mathbb{C})
+\end{equation}
+で表される．
+\section{伝統的な断熱定理}
+$N$準位系が時刻$t_0$から$t_0+\Delta t$まで時間発展するとき，
+\begin{equation} \label{AT1}
+  \left| \langle E_m(t) | \Dot{E}_n(t) \rangle \right| \ll \left| \omega_{nm}(t) \right| \quad (m\ne n)
+\end{equation}
+あるいは，
+\begin{equation} \label{AT2}
+  \max_{t\in [t_0, t_0+\Delta t]} \frac{\left| \langle E_m(t) |\Dot{\Hat{H}}(t)| E_n(t) \rangle \right|}{\omega_{nm}(t)^2} \ll 1 \quad (m\ne n)
+\end{equation}
+を(伝統的な)断熱条件(adiabatic condition)と呼ぶ\footnote{式(\ref{AT1})と式(\ref{AT2})が等価であることは，式(\ref{EE})を微分して式(\ref{AT1})に代入することで容易に確かめられる．}．ただし，$\omega_{nm} := \hbar^{-1} \left( E_n(t)-E_m(t) \right)$である．系が断熱条件を満たすとき，$|c_n|^2$の比(各状態の占有確率)は変化しない．これを断熱定理(adiabatic theorem)と呼ぶ．また，断熱定理にしたがった遷移を断熱遷移(adiabatic transition)と呼ぶ．
+
+\section{新たな断熱定理}
+近年，断熱条件を拡張することで，幾何学的な効果を取り入れられることが明らかになった\cite{Wu2008}．新しい断熱条件は，
+\begin{equation}
+  \left| \langle E_m(t) | \Dot{E}_n(t) \rangle \right| \ll \left| \omega_{nm}(t) + \Delta_{mn}(t) \right| \quad (m\ne n) 
+\end{equation}
+で与えられる．ここで，
+\begin{equation}
+  \Delta_{mn}(t) := \frac{1}{\hbar} \left\{ i \left( \langle \phi_m(t) | \Dot{\phi}_m(t) \rangle - \langle \phi_n(t) | \Dot{\phi}_n(t) \rangle \right)+ \frac{d}{dt} \arg \left( i \langle \phi_n(t) | \Dot{\phi}_m(t) \rangle \right) \right\}
+\end{equation}
+をquantum geometric potential(QGP)と呼ぶ．QGPは，後に説明する測地曲率と関係づけることができる．実際に，2準位系の場合について，このことを示そう．2準位系のHermiteなHamiltonianを
+\begin{align}
+  \Hat{H}(t)
+  &= x(t)\Hat{\sigma}_x + y(t) \Hat{\sigma}_y + z(t) \Hat{\sigma}_z\\
+  &=
+  \begin{pmatrix} 
+    z(t) & x(t) - iy(t)\\
+    x(t) + iy(t) & -z(t)\\
+  \end{pmatrix}\\
+  &= E_2(t)
+  \begin{pmatrix} 
+    \cos \theta(t) & \sin \theta(t) \exp(-i\phi(t))\\
+    \sin \theta(t) \exp(+i\phi(t)) & -\cos \theta(t)\\
+  \end{pmatrix}
+\end{align}
+とする．ただし，直交座標$\{x(t), y(t), z(t)\}$から極座標$\{E_2(t), \theta(t), \phi(t)\}$への変換式
+\begin{align}
+  x(t) &= E_2(t) \sin \theta(t) \cos \phi(t)\\
+  y(t) &= E_2(t) \sin \theta(t) \sin \phi(t)\\
+  z(t) &= E_2(t) \cos \theta(t)
+\end{align}
+を用いた.また，$E_2(t)$は，$E_2(t) = \sqrt{x^2 + y^2 + z^2}$で表される断熱エネルギーの1つである．このとき，2つの断熱状態$|\phi_1(t) \rangle, |\phi_2(t) \rangle$は，
+\begin{align}
+  |\phi_1(t) \rangle
+  &= 
+  \begin{pmatrix}
+    \sin \frac{\theta}{2}\\
+    -e^{i\phi} \cos \frac{\theta}{2}
+  \end{pmatrix},\\
+  |\phi_2(t) \rangle
+  &=
+  \begin{pmatrix}
+    \cos \frac{\theta}{2}\\
+    e^{i\phi} \sin \frac{\theta}{2}
+  \end{pmatrix}
+\end{align}
+であるから，これらの時間微分は，
+\begin{align}
+  |\Dot{\phi}_1(t) \rangle
+  &= 
+  \begin{pmatrix}
+    -\frac{\Dot{\theta}}{2} \sin \frac{\theta}{2}\\
+    -e^{i\phi} (i\Dot{\phi} \sin \frac{\theta}{2} + \frac{\Dot{\theta}}{2}\cos \frac{\theta}{2})
+  \end{pmatrix},\\
+  |\Dot{\phi}_2(t) \rangle
+  &=
+  \begin{pmatrix}
+    \frac{\Dot{\theta}}{2} \cos \frac{\theta}{2}\\
+    e^{i\phi} (-i\Dot{\phi} \cos \frac{\theta}{2} + \frac{\Dot{\theta}}{2}\sin \frac{\theta}{2})
+  \end{pmatrix}
+\end{align}
+となる．したがって，
+\begin{equation}
+  \Delta_{mn} = \frac{\Dot{\theta} \Ddot{\phi} \sin \theta + 2 \Dot{\theta}^2 \Dot{\phi} \cos\theta + \Dot{\phi}^3 \sin^2\theta \cos \theta - \Dot{\phi} \Ddot{\theta} \sin \theta}{\Dot{\theta}^2 + (\Dot{\phi} \sin \theta)^2}
+\end{equation}
+である．一方，パラメータ空間の単位球表面を動く曲線における測地曲率$\kappa_g$は，位置ベクトルを$\bm{r}(t)$とすると，
+\begin{align}
+  \kappa_g 
+  &= \left(\bm{r} \times \frac{d \bm{r}}{ds} \right) \cdot \frac{d^2 \bm{r}}{d s^2}\\
+  &= \frac{\Dot{\theta} \Ddot{\phi} \sin \theta + 2 \Dot{\theta}^2 \Dot{\phi} \cos\theta + \Dot{\phi}^3 \sin^2\theta \cos \theta - \Dot{\phi} \Ddot{\theta} \sin \theta} {(\Dot{\theta}^2 + \Dot{\phi} \sin \theta)^{\frac{3}{2}}}
+\end{align}
+で与えられる．ただし，線素
+\begin{equation}
+  ds := |d\bm{r}| = \sqrt{\Dot{\theta}^2 + (\Dot{\phi} \sin \theta)^2}  d\tau
+\end{equation}
+を定義した．よって，
+\begin{equation}
+  \Delta_{mn} = \frac{ds}{d\tau} \kappa_g  
+\end{equation}
+という関係式が得られる．この関係式は，QGP $\Delta_{mn}$が幾何学的な量であることを示唆している．
+
+
+\section{Berry位相}
+本節では，Berry位相について説明する\cite{Berry1984}．
+Hamiltonianの時間依存性を表すパラメータを$\bm{R}(t)$とする．このとき，Shr\"{o}dinger方程式(\ref{SE})は，
+\begin{equation}
+  \Hat{H}(\bm{R}(t)) |\psi(t) \rangle = i\hbar \frac{\partial}{\partial t} |\psi(t) \rangle \label{SE_R}
+\end{equation}
+となる．また，固有値方程式(\ref{EE})は，
+\begin{equation}
+  \Hat{H}(\bm{R}(t)) |\phi(\bm{R}(t)) \rangle = E_n(\bm{R}(t)) |\phi(\bm{R}(t)) \rangle \label{EE_R}
+\end{equation}
+となる．このとき，
+\begin{equation}
+  |\psi(t) \rangle = e^{i\gamma_n(t)} | \phi_n (\bm{R}(t)) \rangle \label{psi_R}
+\end{equation}
+を仮定して，$\bm{R}$空間上の閉じた経路$C$を一周するという条件で，$\gamma(t)$がどのように変化するか見てみよう．そのために，式(\ref{SE_R})の左から$\langle \psi(t) |$をかけると，
+\begin{equation}
+  \langle \psi(t) | \Hat{H}(\bm{R}) |\psi(t) \rangle = i\hbar \langle \psi(t) | \frac{\partial}{\partial t} |\psi(t) \rangle
+\end{equation}
+となる．したがって，
+\begin{equation}
+  \langle \psi(t) | \frac{\partial}{\partial t} |\psi(t) \rangle = -\frac{i}{\hbar} E_n(\bm{R})　\label{E_R}
+\end{equation}
+である．一方，式(\ref{psi_R})より，
+\begin{align}
+  \langle \psi(t) | \frac{\partial}{\partial t} |\psi(t) \rangle
+  &=
+  \langle \phi(\bm{R}) | e^{-i\gamma_n(t)} \left( i\frac{\partial \gamma_n(t)}{\partial t} e^{i\gamma_n(t)} |\phi(\bm{R}) \rangle + e^{i\gamma_n(t)} \frac{\partial}{\partial t} |\phi(\bm{R}) \rangle \right)\\
+  &= i \frac{\partial \gamma_n(t)}{\partial t} + \langle \phi_n(\bm{R}) | \nabla_{\bm{R}} | \phi_n(\bm{R}) \rangle \frac{\partial \bm{R}}{\partial t} \label{R_R}
+\end{align}
+となる．ここで，
+\begin{equation}
+  \nabla_{\bm{R}} := \frac{\partial}{\partial \bm{R}}
+\end{equation}
+である．よって，式(\ref{E_R})および式(\ref{R_R})より，
+\begin{align}
+  i \frac{\partial \gamma_n(t)}{\partial t}
+  &= 
+  -\frac{i}{\hbar} E_n(\bm{R}) - \langle \phi_n(\bm{R}) | \nabla_{\bm{R}} | \phi_n(\bm{R}) \rangle \frac{\partial \bm{R}(t)}{\partial t}\\
+  \Leftrightarrow
+  \frac{\partial \gamma_n(t)}{\partial t}
+  &=
+  -\frac{1}{\hbar} E_n(\bm{R}) + i  \langle \phi_n(\bm{R}) | \nabla_{\bm{R}} | \phi_n(\bm{R}) \rangle \frac{\partial \bm{R}(t)}{\partial t}
+\end{align}
+となる．
+
+
+$\bm{R}(0) = \bm{R}(T)$として，$t$が$0$から$T$まで変化するとき，
+\begin{equation}
+  \gamma(T) - \gamma(0) = -\frac{1}{\hbar} \int_0^T E_n(\bm{R}) dt + i \oint_C \langle \phi_n(\bm{R}) | \nabla_{\bm{R}} | \phi_n(\bm{R}) \rangle d\bm{R}
+\end{equation}
+である．ここで，第1項は動力学的位相(dynamical phase)であり，時間に依存するHamiltonianで表される系では必ず現れる量である．また，この量は可観測量に影響を与えない．一方，第2項はBerry位相(Berry phase)と呼ばれる．この量は，$\bm{R}$空間上の閉じた経路に依存する位相が得られる．
+
+
+また，Berry位相は，Berry接続(Berry connection)
+\begin{equation}
+  \bm{a}_n(\bm{R}) := -i \langle \phi_n(\bm{R}) | \nabla_{\bm{R}} | \phi_n(\bm{R}) \rangle
+\end{equation}
+を用いて，
+\begin{equation}
+  \gamma[C] = - \oint_C \bm{a}_n(\bm{R}) \cdot d\bm{R} \label{B_connection}
+\end{equation}
+と表すことができる．式(\ref{B_connection})を眺めると，電磁気学における磁束とベクトルポテンシャルの関係を思い出すだろう．すなわち，$\gamma[C]$，$\bm{a}_n(\bm{R})$が磁束，ベクトルポテンシャルにそれぞれ対応する．この考えを発展させて，Berry位相を直感的にイメージしてみよう．そのために，Berry曲率
+\begin{equation}
+  \bm{F}_n(\bm{R}) = \nabla_{\bm{R}} \times \bm{a}_n(\bm{R})
+\end{equation}
+を定義する．これは明らかに，電磁気学における磁場(磁束密度)に対応する量である．このとき，Stokesの定理を用いると，Berry位相は
+\begin{align}
+  \gamma_n[C] = - \int_S \bm{F}_n(\bm{R}) \cdot d\bm{R} \label{B_curvature}
+\end{align}
+と書ける．ただし，$S$は$C$を境界とする任意の曲面である．式(\ref{B_curvature})のような表現を用いると，Berry位相$\gamma_n[C]$は曲面$S$を貫く束であると解釈できる．さらに，Berry曲率$\bm{F}_n(\bm{R})$はU(1)不変性(U(1) invariance)を持っている．すなわち，$|\phi_n(\bm{R}) \rangle$の代わりに，
+\begin{equation}
+  \left|\phi_n^{\prime}(\bm{R})\right\rangle=e^{i \chi(\bm{R})}\left|\phi_n(\bm{R})\right\rangle \quad (\chi(\bm{R}) \in \mathbb{C})
+\end{equation}
+を考えると，それに対応するBerry接続
+\begin{align}
+  \bm{a}_n^{\prime}(\bm{R})
+  &= -i\langle \phi_n(\bm{R}) \mid e^{-i\chi(\bm{R})}\left(i \nabla_{\bm{R}} \chi(\bm{R}) e^{i \chi(\bm{R})}\left|\phi_n(\bm{R})\right\rangle\right. \left.+e^{i \chi(\bm{R})} \nabla_{\bm{R}}\left|\phi_n(\bm{R})\right\rangle\right)\\
+  &= \bm{a}_n(\bm{R})+  \nabla_{\bm{R}} \chi_{\bm{R}}
+\end{align}
+が得られる．これはベクトルポテンシャルのゲージ変換に対応する．
+
+
+最後に，パラメータ空間の単位球に張る立体角としてBerry位相を解釈する考え方は特に重要である。この考え方の具体例は，\ref{C_sin}で詳しく説明する．

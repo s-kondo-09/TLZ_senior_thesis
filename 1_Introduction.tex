@@ -1,0 +1,81 @@
+\chapter{はじめに}
+
+\section{研究背景および本論文の目的}
+
+Berryは周期系における波動関数の位相に，自明でない幾何学的な項が含まれることを指摘した\cite{Berry1984}．この項はBerry位相として広く知られている．Berryの指摘から40年が経過した現在，Berry位相は固体物理学や量子操作などの幅広い分野で欠かせない概念である．
+
+
+また，非断熱遷移は自然界で広く見られる現象である．特に，Landau-Zenerモデルは非断熱遷移のもっとも簡単な例であるにもかかわらず，原子の非弾性衝突や磁場中の粒子のスピン遷移などの数多くの現象を説明することができる\cite{Zener}．それに加えて，Landau-Zenerモデルに干渉効果を取り入れたモデルでは，強め合う干渉や弱め合う干渉によって状態の占有確率を制御することができる\cite{Kayanuma1993}．
+
+
+さらに，非断熱遷移では，ある種の幾何学量が遷移確率に影響を与える場合がある\cite{Berry1990}．Twisted Landau-Zenerモデルがその代表例である．このモデルでは，パラメータ空間における測地曲率を調整することによって，遷移確率の制御が可能になる\cite{Oka}．特に，トンネル確率が100％になる完全トンネルを実現できる点は重要である．
+
+
+これらの研究は，現在まで独立に行われてきた背景がある．そのため，これらの概念が複雑に絡みあった現象を扱うことができない．実際の自然界で起こる現象をより正確に議論するためには，上で挙げたモデルを組み合わせた新しいモデルによる一般化が求められる．
+
+
+以上を踏まえて，本研究では，Twisted Landau-Zenerモデルを複数回繰り返すモデルを新たに考案し，波動関数の干渉と測地曲率が引き起こす現象に注目する．特に，これら2つの要因によって，特有の動力学が見られることを示す．
+
+\section{本論文の構成}
+本節では，本論文における各章の概要を説明する．
+
+
+第2章では，量子力学における断熱遷移を説明する．また，最終的には，Berry位相という概念を，Berryが用いた方法に準じて説明することが本章の目標である．そのため，Berry位相の説明に必要な概念を事前に定義しておくことで，量子力学の前提知識をなるべく要求しないことを心掛けた．
+
+
+第3章では，量子力学における非断熱遷移を説明する．特に，非断熱遷移では，幾何学的な量が重要な役割を担うことを強調する．はじめに，ある種の幾何学的位相が非断熱遷移の確率に影響を与えることを，一般的なHamiltonianを用いて示す．その後，Landau-ZenerモデルやTwisted Landau-Zenerモデルという，非断熱遷移の具体的な例を提示する．
+
+
+第4章では，cyclic evolutionについて解説する．特に，本論文のメインテーマである，Twisted Landau-Zener遷移を含むcyclic evolutionを理解するために必要な知識に重点を置く．
+
+
+第5章では，本論文のメインテーマであるTwisted Landau-Zener遷移を含むcyclic evolutionについて説明し，波動関数の干渉と測地曲率が織りなす現象について，数値計算の結果を踏まえて考察する．
+
+
+第6章では，本論文のまとめを示し，今後の展望について説明する．
+
+
+付録では，構成の都合上，本文では割愛したが，本論文の内容をさらに深く理解するために重要な事柄を説明する．具体的には，Landau-Zener公式\cite{Zener}およびDykhne-Davis-Pechukas法\cite{Dykhne}\cite{DavisPechukas1976}\cite{Hwang}の証明を行う．
+\section{本論文で用いられる記法}
+以下の記法は，本文で特に断りなく用いることにする．\\
+\begin{itemize} 
+  \item
+    「$A$は$B$によって定義される」ということを，
+    \begin{equation}
+      A := B
+    \end{equation}
+    で表す．
+  \item
+    ある変数$x$についての偏微分を，
+    \begin{equation}
+      \partial_x := \frac{\partial}{\partial x}
+    \end{equation}
+    と書くことがある．
+  \item 実数全体の集合を$\mathbb{R}$，複素数全体の集合を$\mathbb{C}$とする．
+  \item $\hbar$は，Dirac定数(換算Planck定数)である．これは，Planck定数を$2\pi$で割った値である．
+  \item 以下の3つの$2\times2$行列
+\begin{equation}
+  \Hat{\sigma}_x=
+  \begin{pmatrix}
+    0 & 1\\
+    1 & 0\\
+  \end{pmatrix}
+  ,
+  \Hat{\sigma}_y=
+  \begin{pmatrix}
+    0 & -i\\
+    i & 0\\
+  \end{pmatrix}
+  ,
+  \Hat{\sigma}_z=
+  \begin{pmatrix}
+    1 & 0\\
+    0 & -1\\
+  \end{pmatrix}
+\end{equation}
+はPauli行列である．また，各Pauli行列$\Hat{\sigma}_i (i = x,y,z)$をベクトルの成分とみなして，
+\begin{equation}
+  \bm{\Hat{\sigma}} = (\Hat{\sigma}_x, \Hat{\sigma}_y, \Hat{\sigma}_z)
+\end{equation}
+と書くことがある．
+\end{itemize}
