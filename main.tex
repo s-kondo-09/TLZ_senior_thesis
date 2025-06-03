@@ -2,10 +2,17 @@
 \usepackage{amsmath, amssymb, amsfonts, color, bm}
 \usepackage[dvipdfmx]{graphicx}
 \setcounter{tocdepth}{3}
-\title{Twisted Landau-Zener遷移を含む周期的な量子系における\\幾何学的効果\\
-Geometric Effects in Cyclic Evolution \\with Twisted Landau-Zener Transition}
 
-\author{非公開}
+% Git管理用
+\IfFileExists{private.tex}{
+  \input{private.tex}
+} {
+  \newcommand{\myname}{【名前】非公開}
+  \newcommand{\acknowledgement}{【謝辞】非公開}
+}
+
+\title{Twisted Landau-Zener遷移を含む周期的な量子系における\\幾何学的効果\\Geometric Effects in Cyclic Evolution \\with Twisted Landau-Zener Transition}
+\author{\myname}
 \date{\today}
 \begin{document} 
 \maketitle
